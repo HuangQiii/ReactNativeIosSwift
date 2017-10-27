@@ -1,0 +1,42 @@
+PODS:
+  - React/Core (0.44.3):
+    - React/cxxreact
+    - Yoga (= 0.44.3.React)
+  - React/cxxreact (0.44.3):
+    - React/jschelpers
+  - React/DevSupport (0.44.3):
+    - React/Core
+    - React/RCTWebSocket
+  - React/jschelpers (0.44.3)
+  - React/RCTNetwork (0.44.3):
+    - React/Core
+  - React/RCTText (0.44.3):
+    - React/Core
+  - React/RCTWebSocket (0.44.3):
+    - React/Core
+  - SSZipArchive (2.1.1)
+  - Yoga (0.44.3.React)
+
+DEPENDENCIES:
+  - React/Core (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - SSZipArchive
+  - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ../node_modules/react-native
+  Yoga:
+    :path: ../node_modules/react-native/ReactCommon/yoga
+
+SPEC CHECKSUMS:
+  React: 6361345ebeb769a929e10a06baf0c868d6d03ad5
+  SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
+  Yoga: c90474ca3ec1edba44c97b6c381f03e222a9e287
+
+PODFILE CHECKSUM: 0c44106e82712973a0e9c5b4bfacb439f7f2cba5
+
+COCOAPODS: 1.4.0.beta.2
