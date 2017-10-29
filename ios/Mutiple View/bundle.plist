@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<integer>1</integer>
+	<key>name</key>
+	<string>HANDRDC</string>
+	<key>currentVersion</key>
+	<string>1.0.0</string>
+	<key>token</key>
+	<string></string>
+	<key>url</key>
+	<string>http://mobile-cloud.hapcloud.saas.hand-china.com/mobileCloud/v1/bundle</string>
+	<key>mainBundle</key>
+	<dict>
+		<key>id</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>index</string>
+		<key>currentVersion</key>
+		<string>1.0.0</string>
+		<key>path</key>
+		<string>assets://index.android-1.0.0.zip</string>
+	</dict>
+	<key>bundles</key>
+	<array/>
+</dict>
+</plist>

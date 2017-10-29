@@ -15,21 +15,41 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
         print("loadview")
-        
-        let mydir1:String = NSHomeDirectory()+"/Documents"
-        let filePath:String = mydir1 + "/testForZip.zip"
-        
         let fileManager = FileManager.default
+        let mydir:String = NSHomeDirectory()+"/Documents"
+        
+        let mydir1:String = mydir+"/index"
+        try! fileManager.createDirectory(atPath: mydir1, withIntermediateDirectories: true, attributes: nil)
+        
+        let filePath:String = mydir1 + "/index.ios.zip"
+        let filePathOfBundle:String = mydir+"/bundle.plist"
+        
         let exist = fileManager.fileExists(atPath: filePath)
+        let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
+        
+        let jsCodeStr = Bundle.main.path(forResource: "index.ios", ofType: "zip")
+        //let jsCodeUrl:URL? = URL(fileURLWithPath: jsCodeStr!)
+        let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundle", ofType: "plist")
+        
+        if !existOfBundlePlist{
+            do {
+                try fileManager.copyItem(atPath: jsCodeStrOfBundlePlist!,toPath: filePathOfBundle)
+            }catch let error as NSError {
+                print("Ooops! Something went wrong: \(error)")
+            }
+        }
+        
         if !exist{
             do {
-                try fileManager.copyItem(atPath: "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/testForZip.zip",toPath: filePath)
+                //try fileManager.copyItem(atPath: "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/testForZip.zip",toPath: filePath)
+                try fileManager.copyItem(atPath: jsCodeStr!,toPath: filePath)
+                SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir1)
             }
             catch let error as NSError {
                 print("Ooops! Something went wrong: \(error)")
             }
         }
-        SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir1)
+        //SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir1)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
