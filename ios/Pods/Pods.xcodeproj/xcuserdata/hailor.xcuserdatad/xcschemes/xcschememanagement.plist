@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HandyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Mutiple View.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4E043A3AFF9F96066606C1F7B4BCE1D1</key>
+		<key>01EFB1AE27259E441971D09C54D24F00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B4B549C16A974C795B9F49837FBD4B7</key>
+		<key>1465651EBBC44AD3276DDE2476CDA450</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAB800372F16282496764B392FCEDD80</key>
+		<key>336FB291147E50F76B39767A67539C51</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF03208CB3A04B7EC0DDC41EB8186A8D</key>
+		<key>BAAD9189E2B0C12D2CE473193C27A3B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C08662E86F4CDFF437D33362BAEC41F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

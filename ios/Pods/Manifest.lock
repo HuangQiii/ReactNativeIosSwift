@@ -1,4 +1,5 @@
 PODS:
+  - HandyJSON (1.8.0)
   - React/Core (0.44.3):
     - React/cxxreact
     - Yoga (= 0.44.3.React)
@@ -18,6 +19,7 @@ PODS:
   - Yoga (0.44.3.React)
 
 DEPENDENCIES:
+  - HandyJSON
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
@@ -33,10 +35,11 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
+  HandyJSON: edaaa3278bf4c4c96d6f7382b80d6b91c88d3bf5
   React: 6361345ebeb769a929e10a06baf0c868d6d03ad5
   SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
   Yoga: c90474ca3ec1edba44c97b6c381f03e222a9e287
 
-PODFILE CHECKSUM: 0c44106e82712973a0e9c5b4bfacb439f7f2cba5
+PODFILE CHECKSUM: 1b0883fb963561f3cf511dfd51af4dab48bd6260
 
 COCOAPODS: 1.4.0.beta.2

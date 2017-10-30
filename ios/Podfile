@@ -14,4 +14,5 @@ target 'Mutiple View' do
   ]
   pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
   pod 'SSZipArchive'
+  pod 'HandyJSON'
 end

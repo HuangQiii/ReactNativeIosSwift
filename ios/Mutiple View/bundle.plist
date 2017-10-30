@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>id</key>
-	<integer>1</integer>
+	<string>1</string>
 	<key>name</key>
 	<string>HANDRDC</string>
 	<key>currentVersion</key>
@@ -15,7 +15,7 @@
 	<key>mainBundle</key>
 	<dict>
 		<key>id</key>
-		<integer>9</integer>
+		<string>9</string>
 		<key>name</key>
 		<string>index</string>
 		<key>currentVersion</key>
