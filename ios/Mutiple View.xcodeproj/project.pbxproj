@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07147B448C7EEA1C1D28D360 /* Pods_Mutiple_View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E48330811D9C7E8E6C8B91D /* Pods_Mutiple_View.framework */; };
+		606F3DBE1FA897FE0089EB1C /* NativeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F3DBD1FA897FE0089EB1C /* NativeManager.swift */; };
+		606F3DC11FA899790089EB1C /* NativeManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F3DC01FA899790089EB1C /* NativeManagerBridge.m */; };
 		607139441EFE7CEC008B695E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139431EFE7CEC008B695E /* AppDelegate.swift */; };
 		607139461EFE7CEC008B695E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139451EFE7CEC008B695E /* ViewController.swift */; };
 		607139491EFE7CEC008B695E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607139471EFE7CEC008B695E /* Main.storyboard */; };
@@ -15,14 +17,19 @@
 		6071394E1EFE7CEC008B695E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071394C1EFE7CEC008B695E /* LaunchScreen.storyboard */; };
 		607139561EFE8664008B695E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139551EFE8664008B695E /* SecondViewController.swift */; };
 		6087C7501FA5A2B700711F95 /* index.ios.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6087C74F1FA5A2B700711F95 /* index.ios.zip */; };
-		6087C7581FA5B75C00711F95 /* bundle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6087C7571FA5B75C00711F95 /* bundle.plist */; };
 		6087C75F1FA6D0D700711F95 /* BundleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C75E1FA6D0D700711F95 /* BundleModel.swift */; };
 		6087C7641FA70A0200711F95 /* bundleModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 6087C7631FA70A0200711F95 /* bundleModel.json */; };
 		6087C7661FA7113000711F95 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7651FA7113000711F95 /* AppModel.swift */; };
+		6087C7731FA80AC000711F95 /* BundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7721FA80AC000711F95 /* BundleManager.swift */; };
+		6087C7751FA81E6F00711F95 /* BundleUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7741FA81E6F00711F95 /* BundleUpdateModel.swift */; };
+		6087C7771FA81ED700711F95 /* AppUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7761FA81ED700711F95 /* AppUpdateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58EC79C8A28A44F42559CB81 /* Pods-Mutiple View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mutiple View.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mutiple View/Pods-Mutiple View.release.xcconfig"; sourceTree = "<group>"; };
+		606F3DBD1FA897FE0089EB1C /* NativeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeManager.swift; sourceTree = "<group>"; };
+		606F3DBF1FA899780089EB1C /* Mutiple View-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mutiple View-Bridging-Header.h"; sourceTree = "<group>"; };
+		606F3DC01FA899790089EB1C /* NativeManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeManagerBridge.m; sourceTree = "<group>"; };
 		607139401EFE7CEC008B695E /* Mutiple View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mutiple View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607139431EFE7CEC008B695E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607139451EFE7CEC008B695E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,10 +39,12 @@
 		6071394F1EFE7CEC008B695E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607139551EFE8664008B695E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6087C74F1FA5A2B700711F95 /* index.ios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = index.ios.zip; path = bundle/index.ios.zip; sourceTree = SOURCE_ROOT; };
-		6087C7571FA5B75C00711F95 /* bundle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundle.plist; sourceTree = "<group>"; };
 		6087C75E1FA6D0D700711F95 /* BundleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleModel.swift; sourceTree = "<group>"; };
 		6087C7631FA70A0200711F95 /* bundleModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bundleModel.json; sourceTree = "<group>"; };
 		6087C7651FA7113000711F95 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		6087C7721FA80AC000711F95 /* BundleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleManager.swift; sourceTree = "<group>"; };
+		6087C7741FA81E6F00711F95 /* BundleUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleUpdateModel.swift; sourceTree = "<group>"; };
+		6087C7761FA81ED700711F95 /* AppUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateModel.swift; sourceTree = "<group>"; };
 		8E48330811D9C7E8E6C8B91D /* Pods_Mutiple_View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mutiple_View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7122A2972A3976B3B7A368A /* Pods-Mutiple View.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mutiple View.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mutiple View/Pods-Mutiple View.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +84,7 @@
 			children = (
 				6087C75D1FA6D07E00711F95 /* Model */,
 				6087C74F1FA5A2B700711F95 /* index.ios.zip */,
+				6087C7721FA80AC000711F95 /* BundleManager.swift */,
 				607139431EFE7CEC008B695E /* AppDelegate.swift */,
 				607139451EFE7CEC008B695E /* ViewController.swift */,
 				607139471EFE7CEC008B695E /* Main.storyboard */,
@@ -82,8 +92,10 @@
 				6071394A1EFE7CEC008B695E /* Assets.xcassets */,
 				6071394C1EFE7CEC008B695E /* LaunchScreen.storyboard */,
 				6071394F1EFE7CEC008B695E /* Info.plist */,
-				6087C7571FA5B75C00711F95 /* bundle.plist */,
 				6087C7631FA70A0200711F95 /* bundleModel.json */,
+				606F3DBD1FA897FE0089EB1C /* NativeManager.swift */,
+				606F3DC01FA899790089EB1C /* NativeManagerBridge.m */,
+				606F3DBF1FA899780089EB1C /* Mutiple View-Bridging-Header.h */,
 			);
 			path = "Mutiple View";
 			sourceTree = "<group>";
@@ -93,6 +105,8 @@
 			children = (
 				6087C75E1FA6D0D700711F95 /* BundleModel.swift */,
 				6087C7651FA7113000711F95 /* AppModel.swift */,
+				6087C7741FA81E6F00711F95 /* BundleUpdateModel.swift */,
+				6087C7761FA81ED700711F95 /* AppUpdateModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 				TargetAttributes = {
 					6071393F1EFE7CEC008B695E = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6087C7581FA5B75C00711F95 /* bundle.plist in Resources */,
 				6087C7501FA5A2B700711F95 /* index.ios.zip in Resources */,
 				6071394E1EFE7CEC008B695E /* LaunchScreen.storyboard in Resources */,
 				6071394B1EFE7CEC008B695E /* Assets.xcassets in Resources */,
@@ -210,6 +224,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mutiple View/Pods-Mutiple View-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/React/React.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
@@ -217,6 +232,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
@@ -253,10 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				607139561EFE8664008B695E /* SecondViewController.swift in Sources */,
+				606F3DBE1FA897FE0089EB1C /* NativeManager.swift in Sources */,
+				6087C7751FA81E6F00711F95 /* BundleUpdateModel.swift in Sources */,
 				607139461EFE7CEC008B695E /* ViewController.swift in Sources */,
 				607139441EFE7CEC008B695E /* AppDelegate.swift in Sources */,
+				6087C7771FA81ED700711F95 /* AppUpdateModel.swift in Sources */,
+				6087C7731FA80AC000711F95 /* BundleManager.swift in Sources */,
 				6087C7661FA7113000711F95 /* AppModel.swift in Sources */,
 				6087C75F1FA6D0D700711F95 /* BundleModel.swift in Sources */,
+				606F3DC11FA899790089EB1C /* NativeManagerBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,10 +401,13 @@
 			baseConfigurationReference = A7122A2972A3976B3B7A368A /* Pods-Mutiple View.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Mutiple View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Mutiple-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mutiple View/Mutiple View-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -393,10 +417,12 @@
 			baseConfigurationReference = 58EC79C8A28A44F42559CB81 /* Pods-Mutiple View.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Mutiple View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Mutiple-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mutiple View/Mutiple View-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

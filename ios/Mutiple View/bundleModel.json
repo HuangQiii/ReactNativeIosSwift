@@ -1,6 +1,14 @@
 {
-"id": 1,
-"name": "HANDRDC",
-"currentVersion": "1.0.0",
-"path":"assets"
+    "id": "1",
+    "name": "HANDRDC",
+    "currentVersion": "1.0.0",
+    "token": "",
+    "url": "http://mobile-cloud.hapcloud.saas.hand-china.com/mobileCloud/v1/bundle",
+    "mainBundle": {
+        "id": "9",
+        "name": "index",
+        "currentVersion": "1.0.0",
+        "path": "assets://index.ios-1.0.0.zip"
+    },
+    "bundles": {}
 }

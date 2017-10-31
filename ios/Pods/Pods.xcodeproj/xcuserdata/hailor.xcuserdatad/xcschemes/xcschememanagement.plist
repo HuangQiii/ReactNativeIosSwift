@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HandyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01EFB1AE27259E441971D09C54D24F00</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1465651EBBC44AD3276DDE2476CDA450</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>336FB291147E50F76B39767A67539C51</key>
+		<key>1AE10F05F9537280ECF219A614577BEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAAD9189E2B0C12D2CE473193C27A3B5</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C08662E86F4CDFF437D33362BAEC41F1</key>
+		<key>B8595F31CD4FD61AD0A722FB36E5FB0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC6E22729B9F2B6AF0A9EFF5E19B04AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF499B42737E368276BFF3AD125588CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

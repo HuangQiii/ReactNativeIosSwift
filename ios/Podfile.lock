@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.1)
   - HandyJSON (1.8.0)
   - React/Core (0.44.3):
     - React/cxxreact
@@ -19,6 +20,7 @@ PODS:
   - Yoga (0.44.3.React)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - HandyJSON
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -35,11 +37,12 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   HandyJSON: edaaa3278bf4c4c96d6f7382b80d6b91c88d3bf5
   React: 6361345ebeb769a929e10a06baf0c868d6d03ad5
   SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
   Yoga: c90474ca3ec1edba44c97b6c381f03e222a9e287
 
-PODFILE CHECKSUM: 1b0883fb963561f3cf511dfd51af4dab48bd6260
+PODFILE CHECKSUM: cd655ca62d70f505886d8d4317c001a4f5f1c873
 
 COCOAPODS: 1.4.0.beta.2
