@@ -8,12 +8,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let bundleManager:BundleManager? = BundleManager.getBundleManager()
+        
+        bundleManager!.copyBundleJson()
+        //bundleManager!.checkBundleConfigUpdate()
+        
+        bundleManager!.copyAssetsBundle(name: "index")
+        bundleManager!.copyAssetsBundle(name: "second")
+        //        bundleManager!.downloadBundle(name: "test", url: "http://geteway.mobile-cloud.code.saas.hand-china.com/mobileCloud/v1/bundle/downFile/3/1")
+        
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {

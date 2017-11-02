@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
+  TouchableWithoutFeedback,
 } from 'react-native';
 
 class RNHighScores extends React.Component {
@@ -21,13 +21,13 @@ class RNHighScores extends React.Component {
     );
     return (
       <View style={styles.container}>
-      <TouchableOpacity
+      <TouchableWithoutFeedback
         onPress={()=>this.callNativeMethod()}
       >
         <Text style={styles.highScoresTitle}>
-          xie tian xie di aaa
+          Second View
         </Text>
-      </TouchableOpacity>
+      </TouchableWithoutFeedback>
         <Text style={styles.scores}>    
           {contents}
         </Text>
