@@ -22,31 +22,15 @@ class BundleManager{
     
     func goTo(view:UIViewController,name:String){
         if type(of:view) == ViewController.classForCoder() {
-//            BundleManager.viewController?.dismiss(animated: true, completion: nil)
-//        view.navigationController?.popViewController(animated: true)
+        //BundleManager.viewController?.dismiss(animated: true, completion: nil)
+        //view.navigationController?.popViewController(animated: true)
             view.performSegue(withIdentifier: "ShowSecond", sender: name)
         }else{
             view.performSegue(withIdentifier: "show2", sender: name)
         }
     
     }
-    //发送bundle检查是否更新，更新updatebundle
-    func checkBundleConfigUpdate(){
-        let bundleConfig=getAppModel()?.toJSON()
-        
-        let headers:HTTPHeaders = [
-            "Content-Type":"application/json"
-        ]
-        
-        Alamofire.request("http://10.211.98.188:8081/testLink", method: HTTPMethod.post, parameters: bundleConfig, encoding: JSONEncoding.default, headers:headers)
-            .responseJSON{
-                response in
-                let json = response.result.value
-                let data : Data! = try? JSONSerialization.data(withJSONObject: json!, options: [])
-                let str = String(data:data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
-                self.writeAppUpdateModel(appUpdateModel: AppUpdateModel.deserialize(from: str)!)
-            }
-    }
+    
     //下载bundle
     func downloadBundle(name:String,url:String){
         let destination: DownloadRequest.DownloadFileDestination = { _, response in
@@ -54,7 +38,7 @@ class BundleManager{
             let fileURL = documentsURL.appendingPathComponent(name+"/"+name+".ios.zip")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-        let parameters:Parameters=["Authorization":"bearer 2dc9b130-724c-403c-82c4-9299a99bf9f1"]
+        let parameters:Parameters=["Authorization":"Bearer c533d98e-839c-460c-894b-5176a72f100d"]
         Alamofire.download(url,parameters:parameters,to: destination)
             .downloadProgress { progress in
                 print("当前进度: \(progress.fractionCompleted)")
@@ -146,7 +130,7 @@ class BundleManager{
         )
         let vc = BundleManager.secondView
         vc?.view = rootView
-//        view.present(vc, animated: true, completion: nil)
+        //view.present(vc, animated: true, completion: nil)
         view.navigationController?.pushViewController(vc!, animated: true)
     }
     func loadMainBundle(view: ViewController,name:String){
@@ -168,20 +152,56 @@ class BundleManager{
         )
         let vc = BundleManager.viewController
         vc?.view = rootView
-//        view.present(vc, animated: true, completion: nil)
+        //view.present(vc, animated: true, completion: nil)
         view.navigationController?.pushViewController(vc!, animated: true)
     }
 
+    //------------------------modify
     //初始化复制json和index，并根据json的bundle去复制压缩包
     func syncBundleConfig(){
         copyBundleJson()
         copyAssetsBundle(name: "index")
         let appModel:AppModel=getAppModel()!
         let appModelBundles=appModel.bundleModels
-        for bundleModel:BundleModel? in appModelBundles.values {
-            copyAssetsBundle(name: bundleModel!.name!)
+        if(appModelBundles.count>0){
+            for name:String in appModelBundles.keys {
+                copyAssetsBundle(name:name)
+            }
         }
+        //checkBundleConfigUpdate()
+    }
+    //复制配置表
+    func copyBundleJson(){
+        let fileManager = FileManager.default
+        let mydir:String = NSHomeDirectory()+"/Documents"
         
+        let filePathOfBundle:String = mydir+"/bundleModel.json"
+        let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
+        let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundleModel", ofType: "json")
+        if !existOfBundlePlist{
+            do {
+                try fileManager.copyItem(atPath: jsCodeStrOfBundlePlist!,toPath: filePathOfBundle)
+            }catch let error as NSError {
+                print("copy bundle json went wrong: \(error)")
+            }
+        }
+    }
+    //发送bundle检查是否更新，更新updatebundle
+    func checkBundleConfigUpdate(){
+        let bundleConfig=getAppModel()?.toJSON()
+        
+        let headers:HTTPHeaders = [
+            "Content-Type":"application/json"
+        ]
+        
+        Alamofire.request("http://xxx/testLink", method: HTTPMethod.post, parameters: bundleConfig, encoding: JSONEncoding.default, headers:headers)
+            .responseJSON{
+                response in
+                let json = response.result.value
+                let data : Data! = try? JSONSerialization.data(withJSONObject: json!, options: [])
+                let str = String(data:data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                self.writeAppUpdateModel(appUpdateModel: AppUpdateModel.deserialize(from: str)!)
+        }
     }
     //复制bundle的压缩包
     func copyAssetsBundle(name:String){
@@ -227,22 +247,6 @@ class BundleManager{
             }
         }
     }
-    //复制配置表
-    func copyBundleJson(){
-        let fileManager = FileManager.default
-        let mydir:String = NSHomeDirectory()+"/Documents"
-        
-        let filePathOfBundle:String = mydir+"/bundleModel.json"
-        let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
-        let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundleModel", ofType: "json")
-        if !existOfBundlePlist{
-            do {
-                try fileManager.copyItem(atPath: jsCodeStrOfBundlePlist!,toPath: filePathOfBundle)
-            }catch let error as NSError {
-                print("copy bundle json went wrong: \(error)")
-            }
-        }
-    }
     //读取配置表生成对象
     func getAppModel() -> AppModel?{
         let mydir:String = NSHomeDirectory()+"/Documents"
@@ -251,7 +255,7 @@ class BundleManager{
         let ur = URL(fileURLWithPath: filePathOfBundle!)
         do {
             let str = try String(contentsOf: ur,encoding: .utf8)
-            //print(str)
+            print(str)
             let appModel:AppModel = AppModel.deserialize(from:str)!
             return appModel
         } catch let error as NSError {
@@ -281,14 +285,12 @@ class BundleManager{
         let ur = URL(fileURLWithPath: filePathOfBundle!)
         do {
             let str = try String(contentsOf: ur,encoding: .utf8)
-            //print(str)
             let appUpdateModel:AppUpdateModel = AppUpdateModel.deserialize(from:str)!
             return appUpdateModel
         } catch let error as NSError {
             print("Something went wrong: \(error)")
         }
         return AppUpdateModel()
-        //.deserialize(from: "")
     }
     //写入更新表
     func writeAppUpdateModel(appUpdateModel:AppUpdateModel){

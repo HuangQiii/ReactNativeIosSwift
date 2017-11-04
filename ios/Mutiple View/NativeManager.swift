@@ -33,5 +33,15 @@ class NativeManager: NSObject {
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
         bundleManager!.goTo(view: rootViewController!,name: "Hello")
     }
+    @objc func openBundle(_ name:String){
+        let rootViewController:UIViewController? = UIApplication.topViewController()
+        let bundleManager:BundleManager? = BundleManager.getBundleManager()
+        bundleManager!.goTo(view: rootViewController!,name: name)
+        print(name)
+    }
+    @objc func downloadBundle(_ name:String){
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        bunderManager!.downloadBundle(name: name, url: "http://xxx/v1/bundle/downFile/3/1")
+    }
 }
 

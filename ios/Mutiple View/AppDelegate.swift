@@ -9,13 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
-        
-        bundleManager!.copyBundleJson()
-        //bundleManager!.checkBundleConfigUpdate()
-        
-        bundleManager!.copyAssetsBundle(name: "index")
-        bundleManager!.copyAssetsBundle(name: "second")
-        //        bundleManager!.downloadBundle(name: "test", url: "http://geteway.mobile-cloud.code.saas.hand-china.com/mobileCloud/v1/bundle/downFile/3/1")
+        bundleManager!.syncBundleConfig()
         
         return true
     }

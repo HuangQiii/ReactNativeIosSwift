@@ -7,14 +7,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var outlet: UITextField!
     var name="Hello"
     
-//    @IBAction func action(_ sender: Any) {
-//        if(outlet.text != ""){
-//            name = outlet.text!
-//            performSegue(withIdentifier: "segue", sender: self)
-//        }
-//        
-//    }
-    
     func goToThree(_ sender: Any) {
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
         bundleManager!.goTo(view: self,name: "Hello")
@@ -29,15 +21,6 @@ class ViewController: UIViewController {
         super.loadView()
         print("viewController")
         BundleManager.viewController = self
-        
-//        let bundleManager:BundleManager? = BundleManager.getBundleManager()
-//        
-//        bundleManager!.copyBundleJson()
-//        //bundleManager!.checkBundleConfigUpdate()
-//
-//        bundleManager!.copyAssetsBundle(name: "index")
-//        bundleManager!.copyAssetsBundle(name: "second")
-////        bundleManager!.downloadBundle(name: "test", url: "http://geteway.mobile-cloud.code.saas.hand-china.com/mobileCloud/v1/bundle/downFile/3/1")
     }
     override func viewDidLoad() {
         super.viewDidLoad()

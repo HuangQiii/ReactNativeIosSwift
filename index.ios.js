@@ -14,23 +14,35 @@ class RNHighScores extends React.Component {
     var nativeManager = NativeModules.NativeManager;
     nativeManager.testCall();
   }
+  open(name){
+    var nativeManager = NativeModules.NativeManager;
+    nativeManager.openBundle(name);
+  }
+  download(name){
+    var nativeManager = NativeModules.NativeManager;
+    nativeManager.downloadBundle(name);
+  }
 
   render() {
-    var contents = this.props["scores"].map(
-      score => <Text key={score.name}>{score.name}{score.value}{"\n"}</Text>
-    );
     return (
       <View style={styles.container}>
+        <Text>
+          Main Bundle
+        </Text>
       <TouchableWithoutFeedback
-        onPress={()=>this.callNativeMethod()}
+        onPress={()=>this.download("test")}
       >
         <Text style={styles.highScoresTitle}>
-          Second View
+          Download a test
         </Text>
       </TouchableWithoutFeedback>
-        <Text style={styles.scores}>    
-          {contents}
+      <TouchableWithoutFeedback
+        onPress={()=>this.open("second")}
+      >
+        <Text style={styles.highScoresTitle}>
+          Click Me to go to open second
         </Text>
+      </TouchableWithoutFeedback>
       </View>
     );
   }
