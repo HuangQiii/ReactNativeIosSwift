@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "ecc676d4d129d0c1c2e768f126aed452"
+build_time: [563284967, 335878000]
+inputs:
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/SecondViewController.swift": [562993361, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/NativeManager.swift": [563276593, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/BundleUpdateModel.swift": [562734814, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/ViewController.swift": [563016954, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/AppDelegate.swift": [563016863, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/AppUpdateModel.swift": [562751967, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/BundleManager.swift": [563282569, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/AppModel.swift": [562748055, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/BundleModel.swift": [562734750, 0]

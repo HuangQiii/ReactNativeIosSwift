@@ -1,0 +1,456 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C12Mutiple_View11AppDelegate"
+provides-member:
+- ["C12Mutiple_View11AppDelegate", ""]
+provides-dynamic-lookup:
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "window"
+depends-top-level:
+- "AppDelegate"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "BundleManager"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
+- "UIWindow"
+depends-member:
+- !private ["Ps9AnyObject", "BundleManager"]
+- ["Ps9AnyObject", "application"]
+- ["Ps9AnyObject", "applicationDidBecomeActive"]
+- ["Ps9AnyObject", "applicationDidEnterBackground"]
+- ["Ps9AnyObject", "applicationDidFinishLaunching"]
+- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9AnyObject", "applicationSignificantTimeChange"]
+- ["Ps9AnyObject", "applicationWillEnterForeground"]
+- ["Ps9AnyObject", "applicationWillResignActive"]
+- ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "getBundleManager"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "syncBundleConfig"]
+- ["Ps9AnyObject", "window"]
+- ["Ps9AnyObject", ""]
+- ["C12Mutiple_View11AppDelegate", "Bool"]
+- !private ["C12Mutiple_View11AppDelegate", "BundleManager"]
+- ["C12Mutiple_View11AppDelegate", "UIApplication"]
+- ["C12Mutiple_View11AppDelegate", "UIApplicationLaunchOptionsKey"]
+- ["C12Mutiple_View11AppDelegate", "UIWindow"]
+- ["C12Mutiple_View11AppDelegate", "application"]
+- ["C12Mutiple_View11AppDelegate", "applicationDidBecomeActive"]
+- ["C12Mutiple_View11AppDelegate", "applicationDidEnterBackground"]
+- ["C12Mutiple_View11AppDelegate", "applicationDidFinishLaunching"]
+- ["C12Mutiple_View11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C12Mutiple_View11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C12Mutiple_View11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C12Mutiple_View11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C12Mutiple_View11AppDelegate", "applicationSignificantTimeChange"]
+- ["C12Mutiple_View11AppDelegate", "applicationWillEnterForeground"]
+- ["C12Mutiple_View11AppDelegate", "applicationWillResignActive"]
+- ["C12Mutiple_View11AppDelegate", "applicationWillTerminate"]
+- ["C12Mutiple_View11AppDelegate", "deinit"]
+- ["C12Mutiple_View11AppDelegate", "init"]
+- ["C12Mutiple_View11AppDelegate", "window"]
+- !private ["C12Mutiple_View13BundleManager", "getBundleManager"]
+- !private ["C12Mutiple_View13BundleManager", "syncBundleConfig"]
+- !private ["Ps7CVarArg", "BundleManager"]
+- ["Ps7CVarArg", "application"]
+- ["Ps7CVarArg", "applicationDidBecomeActive"]
+- ["Ps7CVarArg", "applicationDidEnterBackground"]
+- ["Ps7CVarArg", "applicationDidFinishLaunching"]
+- ["Ps7CVarArg", "applicationDidReceiveMemoryWarning"]
+- ["Ps7CVarArg", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps7CVarArg", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps7CVarArg", "applicationShouldRequestHealthAuthorization"]
+- ["Ps7CVarArg", "applicationSignificantTimeChange"]
+- ["Ps7CVarArg", "applicationWillEnterForeground"]
+- ["Ps7CVarArg", "applicationWillResignActive"]
+- ["Ps7CVarArg", "applicationWillTerminate"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "window"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "BundleManager"]
+- ["Ps28CustomDebugStringConvertible", "application"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "window"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "BundleManager"]
+- ["Ps23CustomStringConvertible", "application"]
+- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
+- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "window"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "BundleManager"]
+- ["Ps9Equatable", "application"]
+- ["Ps9Equatable", "applicationDidBecomeActive"]
+- ["Ps9Equatable", "applicationDidEnterBackground"]
+- ["Ps9Equatable", "applicationDidFinishLaunching"]
+- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9Equatable", "applicationSignificantTimeChange"]
+- ["Ps9Equatable", "applicationWillEnterForeground"]
+- ["Ps9Equatable", "applicationWillResignActive"]
+- ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "window"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "BundleManager"]
+- ["Ps8Hashable", "application"]
+- ["Ps8Hashable", "applicationDidBecomeActive"]
+- ["Ps8Hashable", "applicationDidEnterBackground"]
+- ["Ps8Hashable", "applicationDidFinishLaunching"]
+- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps8Hashable", "applicationSignificantTimeChange"]
+- ["Ps8Hashable", "applicationWillEnterForeground"]
+- ["Ps8Hashable", "applicationWillResignActive"]
+- ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "window"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "BundleManager"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "BundleManager"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo21UIApplicationDelegate", "BundleManager"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "BundleManager"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "BundleManager"]
+- ["PSo30UIResponderStandardEditActions", "application"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidFinishLaunching"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationShouldRequestHealthAuthorization"]
+- ["PSo30UIResponderStandardEditActions", "applicationSignificantTimeChange"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "window"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["Ps9_Hashable", "BundleManager"]
+- ["Ps9_Hashable", "application"]
+- ["Ps9_Hashable", "applicationDidBecomeActive"]
+- ["Ps9_Hashable", "applicationDidEnterBackground"]
+- ["Ps9_Hashable", "applicationDidFinishLaunching"]
+- ["Ps9_Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9_Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9_Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9_Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9_Hashable", "applicationSignificantTimeChange"]
+- ["Ps9_Hashable", "applicationWillEnterForeground"]
+- ["Ps9_Hashable", "applicationWillResignActive"]
+- ["Ps9_Hashable", "applicationWillTerminate"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "window"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "C12Mutiple_View11AppDelegate"
+- !private "C12Mutiple_View13BundleManager"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Modules/HandyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/React-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModuleData.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTComponentData.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextField.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowTextField.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReloadCommand.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModuleMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReloadPackagerMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSamplingProfilerPackagerMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTClipboard.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTImageSource.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSourceCode.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAsyncLocalStorage.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridge.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTProfile.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeModule.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketModule.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBorderStyle.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSStackFrame.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextDecorationLineType.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAnimationType.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFrameUpdate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTURLRequestDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootViewDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAppState.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridge+Private.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/UIView+Private.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/ZipArchive.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetworking.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCErrorHandling.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTiming.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTInvalidating.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBorderDrawing.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTLog.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSwitch.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFPSGraph.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDisplayLink.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMultipartDataTask.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetworkTask.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootViewInternal.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTI18nUtil.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollableProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTViewControllerProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketObserverProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAutoInsetsProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSegmentedControl.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRefreshControl.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarItem.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavItem.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+Transform.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPlatform.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+CoreLocation.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextSelection.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipCommon.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDeviceInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTErrorInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBar.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/Mutiple View-Bridging-Header.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMultipartStreamReader.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJavaScriptLoader.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSlider.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBundleURLProvider.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPackagerClientResponder.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUIManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextFieldManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSwitchManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSegmentedControlManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRefreshControlManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarItemManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavItemManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTI18nManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTStatusBarManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSliderManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPickerManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDatePickerManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavigatorManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTExceptionsManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAlertManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRawTextManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTActivityIndicatorViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTProgressViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollContentViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAccessibilityManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPerformanceLogger.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTEventDispatcher.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPicker.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDatePicker.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTVRemoteHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTouchHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTURLRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTHTTPRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDataRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFileRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCProfiler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/JSCSamplingProfiler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWrapperViewController.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostViewController.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTEventEmitter.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTVNavigationEventEmitter.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTKeyboardObserver.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketObserver.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTErrorCustomizer.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavigator.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJavaScriptExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTKeyCommands.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDefines.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevSettings.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUtils.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTParserUtils.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGEnums.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGMacros.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMacros.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPointerEvents.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/UIView+React.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSRWebSocket.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReconnectingWebSocket.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON-Swift.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPackagerClient.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTComponent.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTouchEvent.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFont.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAssert.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGNodeList.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+Text.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowRawText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevMenu.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevLoadingView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTActivityIndicatorView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootContentView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUITextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowTextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollContentShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRedBox.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNullability.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Modules/module.modulemap"
+interface-hash: "b306772a10463f7c5fce689aa6452f8e"

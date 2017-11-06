@@ -1,0 +1,141 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DateTransform"
+provides-nominal:
+- "C9HandyJSON13DateTransform"
+provides-member:
+- ["C9HandyJSON13DateTransform", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CastingPrecedence"
+- "Date"
+- "DateTransform"
+- "Double"
+- !private "String"
+- !private "TimeInterval"
+- "TransformType"
+- !private "atof"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "Date"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "TimeInterval"]
+- !private ["Ps9AnyObject", "atof"]
+- ["Ps9AnyObject", "transformFromJSON"]
+- ["Ps9AnyObject", "transformToJSON"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "timeIntervalSince1970"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSince1970"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "timeIntervalSince1970"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "timeIntervalSince1970"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSince1970"]
+- !private ["V10Foundation4Date", "init"]
+- !private ["V10Foundation4Date", "timeIntervalSince1970"]
+- ["C9HandyJSON13DateTransform", "Date"]
+- ["C9HandyJSON13DateTransform", "Double"]
+- ["C9HandyJSON13DateTransform", "JSON"]
+- ["C9HandyJSON13DateTransform", "Object"]
+- !private ["C9HandyJSON13DateTransform", "String"]
+- !private ["C9HandyJSON13DateTransform", "TimeInterval"]
+- !private ["C9HandyJSON13DateTransform", "atof"]
+- ["C9HandyJSON13DateTransform", "deinit"]
+- ["C9HandyJSON13DateTransform", "init"]
+- ["C9HandyJSON13DateTransform", "transformFromJSON"]
+- ["C9HandyJSON13DateTransform", "transformToJSON"]
+- !private ["Sd", "deinit"]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "timeIntervalSince1970"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["P9HandyJSON21FloatPropertyProtocol", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "timeIntervalSince1970"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "timeIntervalSince1970"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["P9HandyJSON13TransformType", "Date"]
+- !private ["P9HandyJSON13TransformType", "Double"]
+- !private ["P9HandyJSON13TransformType", "TimeInterval"]
+- !private ["P9HandyJSON13TransformType", "atof"]
+- ["P9HandyJSON13TransformType", "transformFromJSON"]
+- ["P9HandyJSON13TransformType", "transformToJSON"]
+- ["P9HandyJSON13TransformType", ""]
+- !private ["P9HandyJSON17_BuiltInBasicType", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "timeIntervalSince1970"]
+- !private ["P9HandyJSON11_Measurable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "timeIntervalSince1970"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["P9HandyJSON14_Transformable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "V10Foundation4Date"
+- "C9HandyJSON13DateTransform"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "P9HandyJSON21FloatPropertyProtocol"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "P9HandyJSON13TransformType"
+- !private "P9HandyJSON17_BuiltInBasicType"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps9_Hashable"
+- !private "P9HandyJSON11_Measurable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+- !private "P9HandyJSON14_Transformable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/HandyJSON/Source/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Target Support Files/HandyJSON/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Intermediates/Pods.build/Debug-iphonesimulator/HandyJSON.build/unextended-module.modulemap"
+interface-hash: "c0dac9fa86e73b6ca2e30b720c26ce08"

@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "4554dc320a6763e19d40db55a200aaa8"
+build_time: [563284946, 870341000]
+inputs:
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/AFError.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Alamofire.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/MultipartFormData.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Notifications.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/ParameterEncoding.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Request.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Response.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/ResponseSerialization.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Result.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/ServerTrustPolicy.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/SessionDelegate.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/SessionManager.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/TaskDelegate.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Timeline.swift": [562736140, 0]
+  "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Alamofire/Source/Validation.swift": [562736140, 0]

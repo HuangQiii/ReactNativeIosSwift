@@ -1,0 +1,79 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "_Transformable"
+provides-nominal:
+- "P9HandyJSON14_Transformable"
+provides-member:
+- ["P9HandyJSON14_Transformable", ""]
+- ["P9HandyJSON14_Transformable", "transform"]
+- ["P9HandyJSON14_Transformable", "plainValue"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CastingPrecedence"
+- !private "_BuiltInBasicType"
+- !private "_BuiltInBridgeType"
+- !private "_ExtendCustomBasicType"
+- !private "_ExtendCustomModelType"
+- "_Measurable"
+- !private "_RawEnumProtocol"
+- "_Transformable"
+depends-member:
+- !private ["P9HandyJSON17_BuiltInBasicType", "_plainValue"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "_transform"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "_plainValue"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "_transform"]
+- !private ["P9HandyJSON22_ExtendCustomBasicType", "_plainValue"]
+- !private ["P9HandyJSON22_ExtendCustomBasicType", "_transform"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "_plainValue"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "_transform"]
+- ["P9HandyJSON11_Measurable", "Self"]
+- !private ["P9HandyJSON11_Measurable", "_BuiltInBasicType"]
+- !private ["P9HandyJSON11_Measurable", "_BuiltInBridgeType"]
+- !private ["P9HandyJSON11_Measurable", "_ExtendCustomBasicType"]
+- !private ["P9HandyJSON11_Measurable", "_ExtendCustomModelType"]
+- !private ["P9HandyJSON11_Measurable", "_RawEnumProtocol"]
+- !private ["P9HandyJSON11_Measurable", "_plainValue"]
+- !private ["P9HandyJSON11_Measurable", "_transform"]
+- ["P9HandyJSON11_Measurable", ""]
+- !private ["P9HandyJSON16_RawEnumProtocol", "_plainValue"]
+- !private ["P9HandyJSON16_RawEnumProtocol", "_transform"]
+- ["P9HandyJSON14_Transformable", "Self"]
+- !private ["P9HandyJSON14_Transformable", "_BuiltInBasicType"]
+- !private ["P9HandyJSON14_Transformable", "_BuiltInBridgeType"]
+- !private ["P9HandyJSON14_Transformable", "_ExtendCustomBasicType"]
+- !private ["P9HandyJSON14_Transformable", "_ExtendCustomModelType"]
+- !private ["P9HandyJSON14_Transformable", "_RawEnumProtocol"]
+- !private ["P9HandyJSON14_Transformable", "_plainValue"]
+- !private ["P9HandyJSON14_Transformable", "_transform"]
+- ["P9HandyJSON14_Transformable", "plainValue"]
+- ["P9HandyJSON14_Transformable", "transform"]
+depends-nominal:
+- !private "P9HandyJSON17_BuiltInBasicType"
+- !private "P9HandyJSON18_BuiltInBridgeType"
+- !private "P9HandyJSON22_ExtendCustomBasicType"
+- !private "P9HandyJSON22_ExtendCustomModelType"
+- "P9HandyJSON11_Measurable"
+- !private "P9HandyJSON16_RawEnumProtocol"
+- "P9HandyJSON14_Transformable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/HandyJSON/Source/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Target Support Files/HandyJSON/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Intermediates/Pods.build/Debug-iphonesimulator/HandyJSON.build/unextended-module.modulemap"
+interface-hash: "035677613206357ea4a272dcd588e46b"

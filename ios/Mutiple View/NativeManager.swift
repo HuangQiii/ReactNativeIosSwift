@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import React
 
 extension UIApplication {
     class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
@@ -43,5 +44,28 @@ class NativeManager: NSObject {
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
         bunderManager!.downloadBundle(name: name, url: "http://xxx/v1/bundle/downFile/3/1")
     }
+    @objc func getToken() -> String{
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        return bunderManager!.getToken()
+    }
+    @objc func setToken(_ token:String){
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        return bunderManager!.setToken(token: token)
+    }
+//    @objc func getConfigData(_ callback:RCTResponseSenderBlock){
+//        callback(["HELLO"])
+//    }
+    @objc func getConfigData(_ resolver:RCTPromiseResolveBlock, rejecter:RCTPromiseRejectBlock){
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        let appModel:AppModel = (bunderManager?.getAppModel())!
+        var events:NSArray = []
+        let token:String = appModel.token!
+        let serverUrl:String = appModel.url!
+        let loginUrl:String = serverUrl.replacingOccurrences(of: "/mobileCloud/v1/bundle", with: "").replacingOccurrences(of: "gateway.", with: "")
+        events = [serverUrl,token,loginUrl]
+        resolver(events);
+        
+    }
+
 }
 

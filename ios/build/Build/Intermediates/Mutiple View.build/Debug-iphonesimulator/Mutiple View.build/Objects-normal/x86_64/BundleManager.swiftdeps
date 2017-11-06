@@ -1,0 +1,997 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BundleManager"
+provides-nominal:
+- "C12Mutiple_View13BundleManager"
+provides-member:
+- ["C12Mutiple_View13BundleManager", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "+"
+- !private "=="
+- !private ">"
+- !private "Alamofire"
+- !private "AnyObject"
+- "AppModel"
+- "AppUpdateModel"
+- "Array"
+- "AssignmentPrecedence"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- !private "Bundle"
+- "BundleManager"
+- !private "BundleModel"
+- "CastingPrecedence"
+- !private "Data"
+- !private "Dictionary"
+- !private "DownloadRequest"
+- !private "FileManager"
+- !private "HTTPHeaders"
+- !private "HTTPMethod"
+- "Int"
+- !private "JSONEncoding"
+- !private "JSONSerialization"
+- !private "NSDictionary"
+- !private "NSError"
+- !private "NSHomeDirectory"
+- !private "NSObject"
+- !private "Parameters"
+- !private "RCTRootView"
+- !private "SSZipArchive"
+- "SecondViewController"
+- "String"
+- !private "StringLiteralType"
+- "UIViewController"
+- !private "URL"
+- "UnicodeScalarType"
+- "ViewController"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "Alamofire"]
+- !private ["Ps9AnyObject", "AppModel"]
+- !private ["Ps9AnyObject", "AppUpdateModel"]
+- !private ["Ps9AnyObject", "Bundle"]
+- !private ["Ps9AnyObject", "BundleManager"]
+- !private ["Ps9AnyObject", "BundleModel"]
+- !private ["Ps9AnyObject", "DownloadFileDestination"]
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "FileManager"]
+- !private ["Ps9AnyObject", "HTTPMethod"]
+- !private ["Ps9AnyObject", "JSONEncoding"]
+- !private ["Ps9AnyObject", "JSONSerialization"]
+- !private ["Ps9AnyObject", "NSHomeDirectory"]
+- !private ["Ps9AnyObject", "RCTRootView"]
+- !private ["Ps9AnyObject", "SSZipArchive"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "ViewController"]
+- !private ["Ps9AnyObject", "bundleManager"]
+- !private ["Ps9AnyObject", "classForCoder"]
+- !private ["Ps9AnyObject", "copyAssetsBundle"]
+- !private ["Ps9AnyObject", "copyBundleJson"]
+- !private ["Ps9AnyObject", "copyIconByName"]
+- !private ["Ps9AnyObject", "copyItem"]
+- !private ["Ps9AnyObject", "createDirectory"]
+- !private ["Ps9AnyObject", "createFile"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "downloadProgress"]
+- !private ["Ps9AnyObject", "fileExists"]
+- !private ["Ps9AnyObject", "fractionCompleted"]
+- !private ["Ps9AnyObject", "getAppModel"]
+- !private ["Ps9AnyObject", "getAppUpdateModel"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "path"]
+- !private ["Ps9AnyObject", "performSegue"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "pushViewController"]
+- !private ["Ps9AnyObject", "responseData"]
+- !private ["Ps9AnyObject", "responseJSON"]
+- !private ["Ps9AnyObject", "secondView"]
+- !private ["Ps9AnyObject", "unzipFile"]
+- !private ["Ps9AnyObject", "urls"]
+- !private ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "viewController"]
+- !private ["Ps9AnyObject", "write"]
+- !private ["Ps9AnyObject", "writeAppModel"]
+- !private ["Ps9AnyObject", "writeAppUpdateModel"]
+- ["Ps9AnyObject", ""]
+- !private ["V12Mutiple_View8AppModel", "bundleModels"]
+- !private ["V12Mutiple_View8AppModel", "deinit"]
+- !private ["V12Mutiple_View8AppModel", "deserialize"]
+- !private ["V12Mutiple_View8AppModel", "init"]
+- !private ["V12Mutiple_View8AppModel", "mainBundle"]
+- !private ["V12Mutiple_View8AppModel", "toJSON"]
+- !private ["V12Mutiple_View8AppModel", "toJSONString"]
+- !private ["V12Mutiple_View8AppModel", "token"]
+- !private ["V12Mutiple_View14AppUpdateModel", "bundleUpdates"]
+- !private ["V12Mutiple_View14AppUpdateModel", "deinit"]
+- !private ["V12Mutiple_View14AppUpdateModel", "deserialize"]
+- !private ["V12Mutiple_View14AppUpdateModel", "init"]
+- !private ["V12Mutiple_View14AppUpdateModel", "mainBundle"]
+- !private ["V12Mutiple_View14AppUpdateModel", "toJSONString"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["CSo6Bundle", "main"]
+- !private ["CSo6Bundle", "path"]
+- !private ["C12Mutiple_View13BundleManager", "Alamofire"]
+- !private ["C12Mutiple_View13BundleManager", "AnyObject"]
+- ["C12Mutiple_View13BundleManager", "AppModel"]
+- ["C12Mutiple_View13BundleManager", "AppUpdateModel"]
+- !private ["C12Mutiple_View13BundleManager", "Bool"]
+- !private ["C12Mutiple_View13BundleManager", "Bundle"]
+- ["C12Mutiple_View13BundleManager", "BundleManager"]
+- !private ["C12Mutiple_View13BundleManager", "BundleModel"]
+- !private ["C12Mutiple_View13BundleManager", "Data"]
+- !private ["C12Mutiple_View13BundleManager", "DownloadRequest"]
+- !private ["C12Mutiple_View13BundleManager", "FileManager"]
+- !private ["C12Mutiple_View13BundleManager", "HTTPHeaders"]
+- !private ["C12Mutiple_View13BundleManager", "HTTPMethod"]
+- ["C12Mutiple_View13BundleManager", "Int"]
+- !private ["C12Mutiple_View13BundleManager", "JSONEncoding"]
+- !private ["C12Mutiple_View13BundleManager", "JSONSerialization"]
+- !private ["C12Mutiple_View13BundleManager", "NSDictionary"]
+- !private ["C12Mutiple_View13BundleManager", "NSError"]
+- !private ["C12Mutiple_View13BundleManager", "NSHomeDirectory"]
+- !private ["C12Mutiple_View13BundleManager", "NSObject"]
+- !private ["C12Mutiple_View13BundleManager", "Parameters"]
+- !private ["C12Mutiple_View13BundleManager", "RCTRootView"]
+- !private ["C12Mutiple_View13BundleManager", "SSZipArchive"]
+- ["C12Mutiple_View13BundleManager", "SecondViewController"]
+- ["C12Mutiple_View13BundleManager", "String"]
+- ["C12Mutiple_View13BundleManager", "UIViewController"]
+- !private ["C12Mutiple_View13BundleManager", "URL"]
+- ["C12Mutiple_View13BundleManager", "ViewController"]
+- ["C12Mutiple_View13BundleManager", "bundleManager"]
+- ["C12Mutiple_View13BundleManager", "checkBundleConfigUpdate"]
+- ["C12Mutiple_View13BundleManager", "copyAssetsBundle"]
+- ["C12Mutiple_View13BundleManager", "copyBundleJson"]
+- ["C12Mutiple_View13BundleManager", "copyIconByName"]
+- ["C12Mutiple_View13BundleManager", "deinit"]
+- ["C12Mutiple_View13BundleManager", "downloadBundle"]
+- ["C12Mutiple_View13BundleManager", "downloadIcon"]
+- ["C12Mutiple_View13BundleManager", "getAppModel"]
+- ["C12Mutiple_View13BundleManager", "getAppUpdateModel"]
+- ["C12Mutiple_View13BundleManager", "getBundleManager"]
+- ["C12Mutiple_View13BundleManager", "getToken"]
+- ["C12Mutiple_View13BundleManager", "goTo"]
+- ["C12Mutiple_View13BundleManager", "init"]
+- ["C12Mutiple_View13BundleManager", "loadBundle"]
+- ["C12Mutiple_View13BundleManager", "loadMainBundle"]
+- !private ["C12Mutiple_View13BundleManager", "print"]
+- ["C12Mutiple_View13BundleManager", "secondView"]
+- ["C12Mutiple_View13BundleManager", "setToken"]
+- ["C12Mutiple_View13BundleManager", "syncBundleConfig"]
+- ["C12Mutiple_View13BundleManager", "updateBundleSuccess"]
+- ["C12Mutiple_View13BundleManager", "viewController"]
+- ["C12Mutiple_View13BundleManager", "writeAppModel"]
+- ["C12Mutiple_View13BundleManager", "writeAppUpdateModel"]
+- !private ["V12Mutiple_View11BundleModel", "currentVersion"]
+- !private ["V12Mutiple_View11BundleModel", "deinit"]
+- !private ["V12Mutiple_View11BundleModel", "id"]
+- !private ["V12Mutiple_View11BundleModel", "init"]
+- !private ["V12Mutiple_View11BundleModel", "name"]
+- !private ["V12Mutiple_View11BundleModel", "path"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "classForCoder"]
+- !private ["Ps7CVarArg", "copyItem"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "createDirectory"]
+- !private ["Ps7CVarArg", "createFile"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "fileExists"]
+- !private ["Ps7CVarArg", "fractionCompleted"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "keys"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "path"]
+- !private ["Ps7CVarArg", "performSegue"]
+- !private ["Ps7CVarArg", "pushViewController"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "unzipFile"]
+- !private ["Ps7CVarArg", "urls"]
+- !private ["Ps7CVarArg", "view"]
+- !private ["Ps7CVarArg", "write"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "keys"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "write"]
+- !private ["Ps28CustomDebugStringConvertible", "DownloadFileDestination"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "classForCoder"]
+- !private ["Ps28CustomDebugStringConvertible", "copyItem"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "createDirectory"]
+- !private ["Ps28CustomDebugStringConvertible", "createFile"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "downloadProgress"]
+- !private ["Ps28CustomDebugStringConvertible", "fileExists"]
+- !private ["Ps28CustomDebugStringConvertible", "fractionCompleted"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "keys"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "path"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "responseData"]
+- !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "unzipFile"]
+- !private ["Ps28CustomDebugStringConvertible", "urls"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- !private ["Ps28CustomDebugStringConvertible", "write"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "write"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "keys"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "write"]
+- !private ["Ps23CustomStringConvertible", "DownloadFileDestination"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "classForCoder"]
+- !private ["Ps23CustomStringConvertible", "copyItem"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "createDirectory"]
+- !private ["Ps23CustomStringConvertible", "createFile"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "downloadProgress"]
+- !private ["Ps23CustomStringConvertible", "fileExists"]
+- !private ["Ps23CustomStringConvertible", "fractionCompleted"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "keys"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "path"]
+- !private ["Ps23CustomStringConvertible", "performSegue"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
+- !private ["Ps23CustomStringConvertible", "rawValue"]
+- !private ["Ps23CustomStringConvertible", "responseData"]
+- !private ["Ps23CustomStringConvertible", "responseJSON"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "unzipFile"]
+- !private ["Ps23CustomStringConvertible", "urls"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- !private ["Ps23CustomStringConvertible", "write"]
+- !private ["C9Alamofire11DataRequest", "responseJSON"]
+- !private ["V9Alamofire12DataResponse", "result"]
+- !private ["Vs10Dictionary", "count"]
+- !private ["Vs10Dictionary", "keys"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["VC9Alamofire15DownloadRequest15DownloadOptions", "createIntermediateDirectories"]
+- !private ["VC9Alamofire15DownloadRequest15DownloadOptions", "removePreviousFile"]
+- !private ["C9Alamofire15DownloadRequest", "DownloadFileDestination"]
+- !private ["C9Alamofire15DownloadRequest", "downloadProgress"]
+- !private ["C9Alamofire15DownloadRequest", "responseData"]
+- !private ["V9Alamofire16DownloadResponse", "result"]
+- !private ["VE10FoundationSS8Encoding", "init"]
+- !private ["VE10FoundationSS8Encoding", "rawValue"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Encoding"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
+- !private ["Ps9Equatable", "classForCoder"]
+- !private ["Ps9Equatable", "copyItem"]
+- !private ["Ps9Equatable", "createDirectory"]
+- !private ["Ps9Equatable", "createFile"]
+- !private ["Ps9Equatable", "createIntermediateDirectories"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "documentDirectory"]
+- !private ["Ps9Equatable", "fileExists"]
+- !private ["Ps9Equatable", "fractionCompleted"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "path"]
+- !private ["Ps9Equatable", "performSegue"]
+- !private ["Ps9Equatable", "post"]
+- !private ["Ps9Equatable", "pushViewController"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "removePreviousFile"]
+- !private ["Ps9Equatable", "unzipFile"]
+- !private ["Ps9Equatable", "urls"]
+- !private ["Ps9Equatable", "userDomainMask"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "write"]
+- !private ["Ps25ExpressibleByArrayLiteral", "createIntermediateDirectories"]
+- !private ["Ps25ExpressibleByArrayLiteral", "removePreviousFile"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps25ExpressibleByArrayLiteral", "userDomainMask"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "count"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "keys"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "write"]
+- !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "write"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "write"]
+- !private ["CSo11FileManager", "copyItem"]
+- !private ["CSo11FileManager", "createDirectory"]
+- !private ["CSo11FileManager", "createFile"]
+- !private ["CSo11FileManager", "default"]
+- !private ["CSo11FileManager", "fileExists"]
+- !private ["CSo11FileManager", "urls"]
+- !private ["O9Alamofire10HTTPMethod", "post"]
+- !private ["P9HandyJSON9HandyJSON", "bundleModels"]
+- !private ["P9HandyJSON9HandyJSON", "bundleUpdates"]
+- !private ["P9HandyJSON9HandyJSON", "currentVersion"]
+- !private ["P9HandyJSON9HandyJSON", "deserialize"]
+- !private ["P9HandyJSON9HandyJSON", "id"]
+- !private ["P9HandyJSON9HandyJSON", "init"]
+- !private ["P9HandyJSON9HandyJSON", "mainBundle"]
+- !private ["P9HandyJSON9HandyJSON", "name"]
+- !private ["P9HandyJSON9HandyJSON", "path"]
+- !private ["P9HandyJSON9HandyJSON", "toJSON"]
+- !private ["P9HandyJSON9HandyJSON", "toJSONString"]
+- !private ["P9HandyJSON9HandyJSON", "token"]
+- !private ["Ps8Hashable", "Encoding"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
+- !private ["Ps8Hashable", "classForCoder"]
+- !private ["Ps8Hashable", "copyItem"]
+- !private ["Ps8Hashable", "createDirectory"]
+- !private ["Ps8Hashable", "createFile"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "documentDirectory"]
+- !private ["Ps8Hashable", "fileExists"]
+- !private ["Ps8Hashable", "fractionCompleted"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "path"]
+- !private ["Ps8Hashable", "performSegue"]
+- !private ["Ps8Hashable", "post"]
+- !private ["Ps8Hashable", "pushViewController"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "unzipFile"]
+- !private ["Ps8Hashable", "urls"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["Ps8Hashable", "view"]
+- !private ["Ps8Hashable", "write"]
+- !private ["V9Alamofire12JSONEncoding", "default"]
+- !private ["CSo17JSONSerialization", "data"]
+- !private ["Ps25LosslessStringConvertible", "Encoding"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "write"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "write"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "Encoding"]
+- !private ["PSo8NSCoding", "classForCoder"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "performSegue"]
+- !private ["PSo8NSCoding", "pushViewController"]
+- !private ["PSo8NSCoding", "view"]
+- !private ["PSo8NSCoding", "write"]
+- !private ["PSo9NSCopying", "Encoding"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "write"]
+- !private ["PSo26NSExtensionRequestHandling", "classForCoder"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- !private ["PSo16NSMutableCopying", "Encoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "write"]
+- !private ["CSo8NSObject", "Encoding"]
+- !private ["CSo8NSObject", "classForCoder"]
+- !private ["CSo8NSObject", "copyItem"]
+- !private ["CSo8NSObject", "createDirectory"]
+- !private ["CSo8NSObject", "createFile"]
+- !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "fileExists"]
+- !private ["CSo8NSObject", "fractionCompleted"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "path"]
+- !private ["CSo8NSObject", "performSegue"]
+- !private ["CSo8NSObject", "pushViewController"]
+- !private ["CSo8NSObject", "unzipFile"]
+- !private ["CSo8NSObject", "urls"]
+- !private ["CSo8NSObject", "view"]
+- !private ["CSo8NSObject", "write"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
+- !private ["PSo16NSObjectProtocol", "classForCoder"]
+- !private ["PSo16NSObjectProtocol", "copyItem"]
+- !private ["PSo16NSObjectProtocol", "createDirectory"]
+- !private ["PSo16NSObjectProtocol", "createFile"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "fileExists"]
+- !private ["PSo16NSObjectProtocol", "fractionCompleted"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- !private ["PSo16NSObjectProtocol", "performSegue"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "unzipFile"]
+- !private ["PSo16NSObjectProtocol", "urls"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- !private ["PSo16NSObjectProtocol", "write"]
+- !private ["PSo14NSSecureCoding", "Encoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "write"]
+- !private ["CSo8NSString", "Encoding"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "write"]
+- !private ["Ps9OptionSet", "createIntermediateDirectories"]
+- !private ["Ps9OptionSet", "removePreviousFile"]
+- !private ["Ps9OptionSet", "userDomainMask"]
+- !private ["P9Alamofire17ParameterEncoding", "default"]
+- !private ["CSo8Progress", "fractionCompleted"]
+- !private ["PSo12RCTComponent", "init"]
+- !private ["CSo11RCTRootView", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps16RawRepresentable", "createIntermediateDirectories"]
+- !private ["Ps16RawRepresentable", "documentDirectory"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "post"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "removePreviousFile"]
+- !private ["Ps16RawRepresentable", "userDomainMask"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["P10Foundation20ReferenceConvertible", "appendingPathComponent"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["C9Alamofire7Request", "DownloadFileDestination"]
+- !private ["C9Alamofire7Request", "downloadProgress"]
+- !private ["C9Alamofire7Request", "responseData"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["P9Alamofire8Response", "result"]
+- !private ["O9Alamofire6Result", "value"]
+- !private ["CSo12SSZipArchive", "unzipFile"]
+- !private ["OCSo11FileManager19SearchPathDirectory", "documentDirectory"]
+- !private ["VCSo11FileManager20SearchPathDomainMask", "userDomainMask"]
+- !private ["C12Mutiple_View20SecondViewController", "navigationController"]
+- !private ["C12Mutiple_View20SecondViewController", "view"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "keys"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "createIntermediateDirectories"]
+- !private ["Ps10SetAlgebra", "removePreviousFile"]
+- !private ["Ps10SetAlgebra", "userDomainMask"]
+- !private ["SS", "Encoding"]
+- !private ["SS", "init"]
+- !private ["SS", "write"]
+- !private ["Ps16TextOutputStream", "Encoding"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "write"]
+- !private ["Ps20TextOutputStreamable", "Encoding"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "write"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo21UIAppearanceContainer", "classForCoder"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "performSegue"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- !private ["PSo18UIContentContainer", "classForCoder"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "performSegue"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
+- !private ["PSo18UIContentContainer", "view"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo18UIFocusEnvironment", "classForCoder"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "performSegue"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["CSo22UINavigationController", "pushViewController"]
+- !private ["CSo11UIResponder", "classForCoder"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "performSegue"]
+- !private ["CSo11UIResponder", "pushViewController"]
+- !private ["CSo11UIResponder", "view"]
+- !private ["PSo30UIResponderStandardEditActions", "classForCoder"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
+- !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- !private ["PSo16UIStateRestoring", "classForCoder"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "performSegue"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
+- !private ["PSo16UIStateRestoring", "view"]
+- !private ["PSo18UITraitEnvironment", "classForCoder"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "performSegue"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo16UIViewController", "classForCoder"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "performSegue"]
+- !private ["CSo16UIViewController", "pushViewController"]
+- !private ["CSo16UIViewController", "view"]
+- !private ["V10Foundation3URL", "appendingPathComponent"]
+- !private ["V10Foundation3URL", "init"]
+- !private ["P9Alamofire14URLConvertible", "Encoding"]
+- !private ["P9Alamofire14URLConvertible", "appendingPathComponent"]
+- !private ["P9Alamofire14URLConvertible", "init"]
+- !private ["P9Alamofire14URLConvertible", "write"]
+- !private ["P9HandyJSON17UTF8Initializable", "Encoding"]
+- !private ["P9HandyJSON17UTF8Initializable", "init"]
+- !private ["P9HandyJSON17UTF8Initializable", "write"]
+- !private ["C12Mutiple_View14ViewController", "classForCoder"]
+- !private ["C12Mutiple_View14ViewController", "navigationController"]
+- !private ["C12Mutiple_View14ViewController", "view"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "Encoding"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "count"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "init"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "keys"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "subscript"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "write"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "Encoding"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "init"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "write"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "write"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "write"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "write"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "write"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "appendingPathComponent"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "Encoding"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "write"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "bundleModels"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "bundleUpdates"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "currentVersion"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "deserialize"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "id"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "init"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "mainBundle"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "name"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "path"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "toJSON"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "toJSONString"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "token"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "write"]
+- !private ["Ps9_Hashable", "Encoding"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "appendingPathComponent"]
+- !private ["Ps9_Hashable", "classForCoder"]
+- !private ["Ps9_Hashable", "copyItem"]
+- !private ["Ps9_Hashable", "createDirectory"]
+- !private ["Ps9_Hashable", "createFile"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "documentDirectory"]
+- !private ["Ps9_Hashable", "fileExists"]
+- !private ["Ps9_Hashable", "fractionCompleted"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "path"]
+- !private ["Ps9_Hashable", "performSegue"]
+- !private ["Ps9_Hashable", "post"]
+- !private ["Ps9_Hashable", "pushViewController"]
+- !private ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "unzipFile"]
+- !private ["Ps9_Hashable", "urls"]
+- !private ["Ps9_Hashable", "utf8"]
+- !private ["Ps9_Hashable", "view"]
+- !private ["Ps9_Hashable", "write"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "keys"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "keys"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["P9HandyJSON11_Measurable", "Encoding"]
+- !private ["P9HandyJSON11_Measurable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON11_Measurable", "bundleModels"]
+- !private ["P9HandyJSON11_Measurable", "bundleUpdates"]
+- !private ["P9HandyJSON11_Measurable", "count"]
+- !private ["P9HandyJSON11_Measurable", "currentVersion"]
+- !private ["P9HandyJSON11_Measurable", "deserialize"]
+- !private ["P9HandyJSON11_Measurable", "id"]
+- !private ["P9HandyJSON11_Measurable", "init"]
+- !private ["P9HandyJSON11_Measurable", "keys"]
+- !private ["P9HandyJSON11_Measurable", "mainBundle"]
+- !private ["P9HandyJSON11_Measurable", "name"]
+- !private ["P9HandyJSON11_Measurable", "path"]
+- !private ["P9HandyJSON11_Measurable", "subscript"]
+- !private ["P9HandyJSON11_Measurable", "toJSON"]
+- !private ["P9HandyJSON11_Measurable", "toJSONString"]
+- !private ["P9HandyJSON11_Measurable", "token"]
+- !private ["P9HandyJSON11_Measurable", "write"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "appendingPathComponent"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "keys"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "write"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["P9HandyJSON14_Transformable", "Encoding"]
+- !private ["P9HandyJSON14_Transformable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON14_Transformable", "bundleModels"]
+- !private ["P9HandyJSON14_Transformable", "bundleUpdates"]
+- !private ["P9HandyJSON14_Transformable", "count"]
+- !private ["P9HandyJSON14_Transformable", "currentVersion"]
+- !private ["P9HandyJSON14_Transformable", "deserialize"]
+- !private ["P9HandyJSON14_Transformable", "id"]
+- !private ["P9HandyJSON14_Transformable", "init"]
+- !private ["P9HandyJSON14_Transformable", "keys"]
+- !private ["P9HandyJSON14_Transformable", "mainBundle"]
+- !private ["P9HandyJSON14_Transformable", "name"]
+- !private ["P9HandyJSON14_Transformable", "path"]
+- !private ["P9HandyJSON14_Transformable", "subscript"]
+- !private ["P9HandyJSON14_Transformable", "toJSON"]
+- !private ["P9HandyJSON14_Transformable", "toJSONString"]
+- !private ["P9HandyJSON14_Transformable", "token"]
+- !private ["P9HandyJSON14_Transformable", "write"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "V12Mutiple_View8AppModel"
+- !private "V12Mutiple_View14AppUpdateModel"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- !private "CSo6Bundle"
+- "C12Mutiple_View13BundleManager"
+- !private "V12Mutiple_View11BundleModel"
+- !private "PSo15CALayerDelegate"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "C9Alamofire11DataRequest"
+- !private "V9Alamofire12DataResponse"
+- !private "Vs10Dictionary"
+- !private "VC9Alamofire15DownloadRequest15DownloadOptions"
+- !private "C9Alamofire15DownloadRequest"
+- !private "V9Alamofire16DownloadResponse"
+- !private "VE10FoundationSS8Encoding"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo11FileManager"
+- !private "O9Alamofire10HTTPMethod"
+- !private "P9HandyJSON9HandyJSON"
+- !private "Ps8Hashable"
+- !private "V9Alamofire12JSONEncoding"
+- !private "CSo17JSONSerialization"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps9OptionSet"
+- !private "P9Alamofire17ParameterEncoding"
+- !private "CSo8Progress"
+- !private "PSo12RCTComponent"
+- !private "CSo11RCTRootView"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "C9Alamofire7Request"
+- !private "P9Alamofire8Response"
+- !private "O9Alamofire6Result"
+- !private "CSo12SSZipArchive"
+- !private "OCSo11FileManager19SearchPathDirectory"
+- !private "VCSo11FileManager20SearchPathDomainMask"
+- !private "C12Mutiple_View20SecondViewController"
+- !private "Ps8Sequence"
+- !private "Ps10SetAlgebra"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo22UINavigationController"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "V10Foundation3URL"
+- !private "P9Alamofire14URLConvertible"
+- !private "P9HandyJSON17UTF8Initializable"
+- !private "C12Mutiple_View14ViewController"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "P9HandyJSON17_BuiltInBasicType"
+- !private "P9HandyJSON18_BuiltInBridgeType"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "P9HandyJSON22_ExtendCustomModelType"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "P9HandyJSON11_Measurable"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "P9HandyJSON14_Transformable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Modules/HandyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/React-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModuleData.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTComponentData.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextField.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowTextField.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReloadCommand.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModuleMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReloadPackagerMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSamplingProfilerPackagerMethod.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTClipboard.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTImageSource.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSourceCode.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAsyncLocalStorage.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridge.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTProfile.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeModule.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketModule.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBorderStyle.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSStackFrame.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextDecorationLineType.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAnimationType.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFrameUpdate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridgeDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTURLRequestDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootViewDelegate.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAppState.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBridge+Private.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/UIView+Private.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/ZipArchive.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetworking.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCErrorHandling.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTiming.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTInvalidating.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBorderDrawing.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTLog.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSwitch.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFPSGraph.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDisplayLink.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMultipartDataTask.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetworkTask.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootViewInternal.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTI18nUtil.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollableProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTViewControllerProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketObserverProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAutoInsetsProtocol.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSegmentedControl.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRefreshControl.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarItem.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavItem.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+Transform.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPlatform.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+CoreLocation.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextSelection.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipCommon.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDeviceInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTErrorInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNetInfo.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBar.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Mutiple View/Mutiple View-Bridging-Header.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMultipartStreamReader.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJavaScriptLoader.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSlider.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTBundleURLProvider.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPackagerClientResponder.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUIManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextFieldManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSwitchManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSegmentedControlManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRefreshControlManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarItemManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavItemManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTI18nManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTabBarManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTStatusBarManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSliderManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPickerManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDatePickerManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavigatorManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTExceptionsManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAlertManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRawTextManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTActivityIndicatorViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTProgressViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollContentViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextViewManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAccessibilityManager.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPerformanceLogger.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTEventDispatcher.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPicker.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDatePicker.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTVRemoteHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTouchHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTURLRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTHTTPRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDataRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFileRequestHandler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCProfiler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/JSCSamplingProfiler.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWrapperViewController.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostViewController.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTEventEmitter.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTVNavigationEventEmitter.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTKeyboardObserver.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketObserver.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTErrorCustomizer.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNavigator.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJSCExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebSocketExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTJavaScriptExecutor.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTKeyCommands.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDefines.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevSettings.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUtils.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTParserUtils.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGEnums.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGMacros.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTMacros.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPointerEvents.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/UIView+React.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTSRWebSocket.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTReconnectingWebSocket.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Headers/HandyJSON-Swift.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTPackagerClient.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTComponent.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTouchEvent.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTFont.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTAssert.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGNodeList.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTConvert+Text.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowRawText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowText.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevMenu.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTWebView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTDevLoadingView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTActivityIndicatorView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootContentView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTModalHostView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTUITextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTTextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowTextView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTScrollContentShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRootShadowView.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTRedBox.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Headers/RCTNullability.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/HandyJSON/HandyJSON.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Modules/module.modulemap"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Products/Debug-iphonesimulator/React/React.framework/Modules/module.modulemap"
+interface-hash: "5a11ee9fa2a1fe20b2d7c1c94638f070"

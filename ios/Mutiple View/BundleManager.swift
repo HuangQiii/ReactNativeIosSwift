@@ -174,7 +174,7 @@ class BundleManager{
     func copyBundleJson(){
         let fileManager = FileManager.default
         let mydir:String = NSHomeDirectory()+"/Documents"
-        
+        print(NSHomeDirectory())
         let filePathOfBundle:String = mydir+"/bundleModel.json"
         let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
         let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundleModel", ofType: "json")
@@ -320,5 +320,4 @@ class BundleManager{
         appModel?.token=token
         writeAppModel(appModel: appModel!)
     }
-
 }

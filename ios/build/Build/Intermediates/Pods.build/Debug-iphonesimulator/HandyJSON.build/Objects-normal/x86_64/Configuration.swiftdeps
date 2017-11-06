@@ -1,0 +1,293 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DeserializeOptions"
+- "DebugMode"
+- "HandyJSONConfiguration"
+provides-nominal:
+- "V9HandyJSON18DeserializeOptions"
+- "O9HandyJSON9DebugMode"
+- "V9HandyJSON22HandyJSONConfiguration"
+provides-member:
+- ["V9HandyJSON18DeserializeOptions", ""]
+- ["O9HandyJSON9DebugMode", ""]
+- ["V9HandyJSON22HandyJSONConfiguration", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "<<"
+- "=="
+- "Array"
+- "AssignmentPrecedence"
+- "DebugMode"
+- "DeserializeOptions"
+- "FloatLiteralType"
+- "HandyJSONConfiguration"
+- "Int"
+- "IntegerLiteralType"
+- "OptionSet"
+- !private "~="
+depends-member:
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["O9HandyJSON9DebugMode", "RawValue"]
+- ["O9HandyJSON9DebugMode", "_toAnyHashable"]
+- ["O9HandyJSON9DebugMode", "debug"]
+- ["O9HandyJSON9DebugMode", "deinit"]
+- ["O9HandyJSON9DebugMode", "error"]
+- ["O9HandyJSON9DebugMode", "hashValue"]
+- ["O9HandyJSON9DebugMode", "init"]
+- ["O9HandyJSON9DebugMode", "none"]
+- ["O9HandyJSON9DebugMode", "rawValue"]
+- ["O9HandyJSON9DebugMode", "verbose"]
+- ["V9HandyJSON18DeserializeOptions", "DeserializeOptions"]
+- ["V9HandyJSON18DeserializeOptions", "Element"]
+- ["V9HandyJSON18DeserializeOptions", "Int"]
+- ["V9HandyJSON18DeserializeOptions", "RawValue"]
+- ["V9HandyJSON18DeserializeOptions", "caseInsensitive"]
+- ["V9HandyJSON18DeserializeOptions", "contains"]
+- ["V9HandyJSON18DeserializeOptions", "defaultOptions"]
+- ["V9HandyJSON18DeserializeOptions", "deinit"]
+- ["V9HandyJSON18DeserializeOptions", "formIntersection"]
+- ["V9HandyJSON18DeserializeOptions", "formSymmetricDifference"]
+- ["V9HandyJSON18DeserializeOptions", "formUnion"]
+- ["V9HandyJSON18DeserializeOptions", "init"]
+- ["V9HandyJSON18DeserializeOptions", "insert"]
+- ["V9HandyJSON18DeserializeOptions", "intersection"]
+- ["V9HandyJSON18DeserializeOptions", "isDisjoint"]
+- ["V9HandyJSON18DeserializeOptions", "isEmpty"]
+- ["V9HandyJSON18DeserializeOptions", "isSubset"]
+- ["V9HandyJSON18DeserializeOptions", "isSuperset"]
+- ["V9HandyJSON18DeserializeOptions", "rawValue"]
+- ["V9HandyJSON18DeserializeOptions", "remove"]
+- ["V9HandyJSON18DeserializeOptions", "subtract"]
+- ["V9HandyJSON18DeserializeOptions", "subtracting"]
+- ["V9HandyJSON18DeserializeOptions", "symmetricDifference"]
+- ["V9HandyJSON18DeserializeOptions", "union"]
+- ["V9HandyJSON18DeserializeOptions", "update"]
+- ["Ps9Equatable", "DeserializeOptions"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "contains"]
+- ["Ps9Equatable", "defaultOptions"]
+- ["Ps9Equatable", "error"]
+- ["Ps9Equatable", "formIntersection"]
+- ["Ps9Equatable", "formSymmetricDifference"]
+- ["Ps9Equatable", "formUnion"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "insert"]
+- ["Ps9Equatable", "intersection"]
+- ["Ps9Equatable", "isDisjoint"]
+- ["Ps9Equatable", "isEmpty"]
+- ["Ps9Equatable", "isSubset"]
+- ["Ps9Equatable", "isSuperset"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "remove"]
+- ["Ps9Equatable", "subtract"]
+- ["Ps9Equatable", "subtracting"]
+- ["Ps9Equatable", "symmetricDifference"]
+- ["Ps9Equatable", "union"]
+- ["Ps9Equatable", "update"]
+- ["Ps9Equatable", ""]
+- ["Ps25ExpressibleByArrayLiteral", "DeserializeOptions"]
+- ["Ps25ExpressibleByArrayLiteral", "contains"]
+- ["Ps25ExpressibleByArrayLiteral", "defaultOptions"]
+- ["Ps25ExpressibleByArrayLiteral", "formIntersection"]
+- ["Ps25ExpressibleByArrayLiteral", "formSymmetricDifference"]
+- ["Ps25ExpressibleByArrayLiteral", "formUnion"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- ["Ps25ExpressibleByArrayLiteral", "insert"]
+- ["Ps25ExpressibleByArrayLiteral", "intersection"]
+- ["Ps25ExpressibleByArrayLiteral", "isDisjoint"]
+- ["Ps25ExpressibleByArrayLiteral", "isEmpty"]
+- ["Ps25ExpressibleByArrayLiteral", "isSubset"]
+- ["Ps25ExpressibleByArrayLiteral", "isSuperset"]
+- ["Ps25ExpressibleByArrayLiteral", "rawValue"]
+- ["Ps25ExpressibleByArrayLiteral", "remove"]
+- ["Ps25ExpressibleByArrayLiteral", "subtract"]
+- ["Ps25ExpressibleByArrayLiteral", "subtracting"]
+- ["Ps25ExpressibleByArrayLiteral", "symmetricDifference"]
+- ["Ps25ExpressibleByArrayLiteral", "union"]
+- ["Ps25ExpressibleByArrayLiteral", "update"]
+- ["Ps25ExpressibleByArrayLiteral", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["V9HandyJSON22HandyJSONConfiguration", "DebugMode"]
+- ["V9HandyJSON22HandyJSONConfiguration", "DeserializeOptions"]
+- !private ["V9HandyJSON22HandyJSONConfiguration", "_mode"]
+- ["V9HandyJSON22HandyJSONConfiguration", "debugMode"]
+- ["V9HandyJSON22HandyJSONConfiguration", "deserializeOptions"]
+- ["V9HandyJSON22HandyJSONConfiguration", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "error"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["P9HandyJSON23IntegerPropertyProtocol", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Ps9OptionSet", "DeserializeOptions"]
+- ["Ps9OptionSet", "contains"]
+- ["Ps9OptionSet", "defaultOptions"]
+- ["Ps9OptionSet", "formIntersection"]
+- ["Ps9OptionSet", "formSymmetricDifference"]
+- ["Ps9OptionSet", "formUnion"]
+- ["Ps9OptionSet", "init"]
+- ["Ps9OptionSet", "insert"]
+- ["Ps9OptionSet", "intersection"]
+- ["Ps9OptionSet", "isDisjoint"]
+- ["Ps9OptionSet", "isEmpty"]
+- ["Ps9OptionSet", "isSubset"]
+- ["Ps9OptionSet", "isSuperset"]
+- ["Ps9OptionSet", "rawValue"]
+- ["Ps9OptionSet", "remove"]
+- ["Ps9OptionSet", "subtract"]
+- ["Ps9OptionSet", "subtracting"]
+- ["Ps9OptionSet", "symmetricDifference"]
+- ["Ps9OptionSet", "union"]
+- ["Ps9OptionSet", "update"]
+- ["Ps9OptionSet", ""]
+- ["Ps16RawRepresentable", "DeserializeOptions"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "contains"]
+- ["Ps16RawRepresentable", "defaultOptions"]
+- ["Ps16RawRepresentable", "error"]
+- ["Ps16RawRepresentable", "formIntersection"]
+- ["Ps16RawRepresentable", "formSymmetricDifference"]
+- ["Ps16RawRepresentable", "formUnion"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "insert"]
+- ["Ps16RawRepresentable", "intersection"]
+- ["Ps16RawRepresentable", "isDisjoint"]
+- ["Ps16RawRepresentable", "isEmpty"]
+- ["Ps16RawRepresentable", "isSubset"]
+- ["Ps16RawRepresentable", "isSuperset"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", "remove"]
+- ["Ps16RawRepresentable", "subtract"]
+- ["Ps16RawRepresentable", "subtracting"]
+- ["Ps16RawRepresentable", "symmetricDifference"]
+- ["Ps16RawRepresentable", "union"]
+- ["Ps16RawRepresentable", "update"]
+- ["Ps16RawRepresentable", ""]
+- ["Ps10SetAlgebra", "DeserializeOptions"]
+- ["Ps10SetAlgebra", "contains"]
+- ["Ps10SetAlgebra", "defaultOptions"]
+- ["Ps10SetAlgebra", "formIntersection"]
+- ["Ps10SetAlgebra", "formSymmetricDifference"]
+- ["Ps10SetAlgebra", "formUnion"]
+- ["Ps10SetAlgebra", "init"]
+- ["Ps10SetAlgebra", "insert"]
+- ["Ps10SetAlgebra", "intersection"]
+- ["Ps10SetAlgebra", "isDisjoint"]
+- ["Ps10SetAlgebra", "isEmpty"]
+- ["Ps10SetAlgebra", "isSubset"]
+- ["Ps10SetAlgebra", "isSuperset"]
+- ["Ps10SetAlgebra", "rawValue"]
+- ["Ps10SetAlgebra", "remove"]
+- ["Ps10SetAlgebra", "subtract"]
+- ["Ps10SetAlgebra", "subtracting"]
+- ["Ps10SetAlgebra", "symmetricDifference"]
+- ["Ps10SetAlgebra", "union"]
+- ["Ps10SetAlgebra", "update"]
+- ["Ps10SetAlgebra", ""]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "hashValue"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "error"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["P9HandyJSON11_Measurable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON11_Measurable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+- !private ["P9HandyJSON14_Transformable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON14_Transformable", "hashValue"]
+depends-nominal:
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "O9HandyJSON9DebugMode"
+- "V9HandyJSON18DeserializeOptions"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "V9HandyJSON22HandyJSONConfiguration"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "P9HandyJSON23IntegerPropertyProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "Ps9OptionSet"
+- "Ps16RawRepresentable"
+- "Ps10SetAlgebra"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "P9HandyJSON17_BuiltInBasicType"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P9HandyJSON11_Measurable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "P9HandyJSON14_Transformable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/HandyJSON/Source/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Target Support Files/HandyJSON/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Intermediates/Pods.build/Debug-iphonesimulator/HandyJSON.build/unextended-module.modulemap"
+interface-hash: "d5b65aeab3ce5f3aff69eb6f17dce4d0"

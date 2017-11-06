@@ -1,0 +1,184 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Timeline"
+provides-nominal:
+- "V9Alamofire8Timeline"
+provides-member:
+- ["V9Alamofire8Timeline", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "-"
+- !private "Array"
+- "AssignmentPrecedence"
+- "CFAbsoluteTime"
+- "CustomDebugStringConvertible"
+- "CustomStringConvertible"
+- "String"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "Timeline"
+depends-member:
+- !private ["Ps9AnyObject", "init"]
+- !private ["Sa", "joined"]
+- !private ["Ps23BidirectionalCollection", "joined"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "joined"]
+- !private ["Ps10Collection", "joined"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- ["Ps28CustomDebugStringConvertible", "debugDescription"]
+- ["Ps28CustomDebugStringConvertible", "description"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "initialResponseTime"]
+- !private ["Ps28CustomDebugStringConvertible", "joined"]
+- !private ["Ps28CustomDebugStringConvertible", "latency"]
+- !private ["Ps28CustomDebugStringConvertible", "requestCompletedTime"]
+- !private ["Ps28CustomDebugStringConvertible", "requestDuration"]
+- !private ["Ps28CustomDebugStringConvertible", "requestStartTime"]
+- !private ["Ps28CustomDebugStringConvertible", "serializationCompletedTime"]
+- !private ["Ps28CustomDebugStringConvertible", "serializationDuration"]
+- !private ["Ps28CustomDebugStringConvertible", "totalDuration"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "joined"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- ["Ps23CustomStringConvertible", "debugDescription"]
+- ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "initialResponseTime"]
+- !private ["Ps23CustomStringConvertible", "joined"]
+- !private ["Ps23CustomStringConvertible", "latency"]
+- !private ["Ps23CustomStringConvertible", "requestCompletedTime"]
+- !private ["Ps23CustomStringConvertible", "requestDuration"]
+- !private ["Ps23CustomStringConvertible", "requestStartTime"]
+- !private ["Ps23CustomStringConvertible", "serializationCompletedTime"]
+- !private ["Ps23CustomStringConvertible", "serializationDuration"]
+- !private ["Ps23CustomStringConvertible", "totalDuration"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "joined"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "joined"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "joined"]
+- !private ["Ps26RangeReplaceableCollection", "joined"]
+- !private ["Ps8Sequence", "joined"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["V9Alamofire8Timeline", "CFAbsoluteTime"]
+- ["V9Alamofire8Timeline", "String"]
+- ["V9Alamofire8Timeline", "TimeInterval"]
+- ["V9Alamofire8Timeline", "debugDescription"]
+- ["V9Alamofire8Timeline", "deinit"]
+- ["V9Alamofire8Timeline", "description"]
+- ["V9Alamofire8Timeline", "init"]
+- ["V9Alamofire8Timeline", "initialResponseTime"]
+- ["V9Alamofire8Timeline", "latency"]
+- ["V9Alamofire8Timeline", "requestCompletedTime"]
+- ["V9Alamofire8Timeline", "requestDuration"]
+- ["V9Alamofire8Timeline", "requestStartTime"]
+- ["V9Alamofire8Timeline", "serializationCompletedTime"]
+- ["V9Alamofire8Timeline", "serializationDuration"]
+- ["V9Alamofire8Timeline", "totalDuration"]
+- !private ["P9Alamofire14URLConvertible", "init"]
+- !private ["Ps14_ArrayProtocol", "joined"]
+- !private ["Ps23_BidirectionalIndexable", "joined"]
+- !private ["Ps24_DestructorSafeContainer", "joined"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps10_Indexable", "joined"]
+- !private ["Ps14_IndexableBase", "joined"]
+- !private ["Ps17_MutableIndexable", "joined"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "joined"]
+- !private ["Ps22_RandomAccessIndexable", "joined"]
+- !private ["Ps26_RangeReplaceableIndexable", "joined"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "V9Alamofire8Timeline"
+- !private "P9Alamofire14URLConvertible"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+interface-hash: "d3f06de1e6c25d01454a71091690deee"

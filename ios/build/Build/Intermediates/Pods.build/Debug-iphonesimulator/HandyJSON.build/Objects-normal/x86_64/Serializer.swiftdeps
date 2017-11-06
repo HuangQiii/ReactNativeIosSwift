@@ -1,0 +1,257 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["P9HandyJSON9HandyJSON", ""]
+- ["Ps10Collection", ""]
+- ["P9HandyJSON9HandyJSON", "toJSON"]
+- ["P9HandyJSON9HandyJSON", "toJSONString"]
+- ["Ps10Collection", "toJSON"]
+- ["Ps10Collection", "toJSONString"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "Collection"
+- !private "Data"
+- "HandyJSON"
+- !private "InternalLogger"
+- !private "JSONSerialization"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isValidJSONObject"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isValidJSONObject"]
+- ["Ps10Collection", "Bool"]
+- !private ["Ps10Collection", "Data"]
+- ["Ps10Collection", "HandyJSON"]
+- !private ["Ps10Collection", "InternalLogger"]
+- ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "JSONSerialization"]
+- ["Ps10Collection", "String"]
+- !private ["Ps10Collection", "map"]
+- ["Ps10Collection", "toJSON"]
+- ["Ps10Collection", "toJSONString"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isValidJSONObject"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isValidJSONObject"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isValidJSONObject"]
+- !private ["Ps9Equatable", "prettyPrinted"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps25ExpressibleByArrayLiteral", "prettyPrinted"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["P9HandyJSON9HandyJSON", "Bool"]
+- !private ["P9HandyJSON9HandyJSON", "Data"]
+- !private ["P9HandyJSON9HandyJSON", "InternalLogger"]
+- !private ["P9HandyJSON9HandyJSON", "JSONSerialization"]
+- !private ["P9HandyJSON9HandyJSON", "Self"]
+- ["P9HandyJSON9HandyJSON", "String"]
+- !private ["P9HandyJSON9HandyJSON", "_serializeAny"]
+- ["P9HandyJSON9HandyJSON", "toJSON"]
+- ["P9HandyJSON9HandyJSON", "toJSONString"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isValidJSONObject"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["V9HandyJSON14InternalLogger", "logDebug"]
+- !private ["V9HandyJSON14InternalLogger", "logError"]
+- !private ["CSo17JSONSerialization", "data"]
+- !private ["CSo17JSONSerialization", "isValidJSONObject"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "isValidJSONObject"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps9OptionSet", "prettyPrinted"]
+- !private ["Ps16RawRepresentable", "prettyPrinted"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- ["Ps8Sequence", "Bool"]
+- !private ["Ps8Sequence", "Data"]
+- ["Ps8Sequence", "HandyJSON"]
+- !private ["Ps8Sequence", "InternalLogger"]
+- ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "JSONSerialization"]
+- ["Ps8Sequence", "String"]
+- !private ["Ps8Sequence", "map"]
+- !private ["Ps8Sequence", "toJSON"]
+- !private ["Ps10SetAlgebra", "prettyPrinted"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["P9HandyJSON17UTF8Initializable", "init"]
+- !private ["VCSo17JSONSerialization14WritingOptions", "prettyPrinted"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON17_BuiltInBasicType", "init"]
+- !private ["P9HandyJSON18_BuiltInBridgeType", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["P9HandyJSON22_ExtendCustomModelType", "Bool"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "Data"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "InternalLogger"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "JSONSerialization"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "Self"]
+- ["P9HandyJSON22_ExtendCustomModelType", "String"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "_serializeAny"]
+- !private ["P9HandyJSON22_ExtendCustomModelType", "toJSON"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isValidJSONObject"]
+- !private ["Ps9_Hashable", "utf8"]
+- ["Ps10_Indexable", "Bool"]
+- !private ["Ps10_Indexable", "Data"]
+- ["Ps10_Indexable", "HandyJSON"]
+- !private ["Ps10_Indexable", "InternalLogger"]
+- ["Ps10_Indexable", "Iterator"]
+- !private ["Ps10_Indexable", "JSONSerialization"]
+- ["Ps10_Indexable", "String"]
+- !private ["Ps10_Indexable", "map"]
+- !private ["Ps10_Indexable", "toJSON"]
+- ["Ps14_IndexableBase", "Bool"]
+- !private ["Ps14_IndexableBase", "Data"]
+- ["Ps14_IndexableBase", "HandyJSON"]
+- !private ["Ps14_IndexableBase", "InternalLogger"]
+- ["Ps14_IndexableBase", "Iterator"]
+- !private ["Ps14_IndexableBase", "JSONSerialization"]
+- ["Ps14_IndexableBase", "String"]
+- !private ["Ps14_IndexableBase", "map"]
+- !private ["Ps14_IndexableBase", "toJSON"]
+- ["P9HandyJSON11_Measurable", "Bool"]
+- !private ["P9HandyJSON11_Measurable", "Data"]
+- !private ["P9HandyJSON11_Measurable", "InternalLogger"]
+- !private ["P9HandyJSON11_Measurable", "JSONSerialization"]
+- !private ["P9HandyJSON11_Measurable", "Self"]
+- ["P9HandyJSON11_Measurable", "String"]
+- !private ["P9HandyJSON11_Measurable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON11_Measurable", "_serializeAny"]
+- !private ["P9HandyJSON11_Measurable", "init"]
+- !private ["P9HandyJSON11_Measurable", "toJSON"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["P9HandyJSON14_Transformable", "Bool"]
+- !private ["P9HandyJSON14_Transformable", "Data"]
+- !private ["P9HandyJSON14_Transformable", "InternalLogger"]
+- !private ["P9HandyJSON14_Transformable", "JSONSerialization"]
+- !private ["P9HandyJSON14_Transformable", "Self"]
+- ["P9HandyJSON14_Transformable", "String"]
+- !private ["P9HandyJSON14_Transformable", "_getBuiltinLogicValue"]
+- !private ["P9HandyJSON14_Transformable", "_serializeAny"]
+- !private ["P9HandyJSON14_Transformable", "init"]
+- !private ["P9HandyJSON14_Transformable", "toJSON"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "VE10FoundationSS8Encoding"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "P9HandyJSON9HandyJSON"
+- !private "Ps8Hashable"
+- !private "V9HandyJSON14InternalLogger"
+- !private "CSo17JSONSerialization"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps9OptionSet"
+- !private "Ps16RawRepresentable"
+- "Ps8Sequence"
+- !private "Ps10SetAlgebra"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "P9HandyJSON17UTF8Initializable"
+- !private "VCSo17JSONSerialization14WritingOptions"
+- !private "P9HandyJSON17_BuiltInBasicType"
+- !private "P9HandyJSON18_BuiltInBridgeType"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- "P9HandyJSON22_ExtendCustomModelType"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "P9HandyJSON11_Measurable"
+- !private "Ps21_ObjectiveCBridgeable"
+- "P9HandyJSON14_Transformable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/HandyJSON/Source/HandyJSON.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/Pods/Target Support Files/HandyJSON/HandyJSON-umbrella.h"
+- "/Users/hailor/Work/mobile/QhTestMV/ios/build/Build/Intermediates/Pods.build/Debug-iphonesimulator/HandyJSON.build/unextended-module.modulemap"
+interface-hash: "28391d2b6c5e4287420ae73f2002effb"
