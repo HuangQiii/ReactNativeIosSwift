@@ -19,8 +19,8 @@ import {
 import Swiper from 'react-native-swiper';
 
 let iconPath = '';//模块图标路径
-var REQUEST_URL = 'http://gateway.mobile-cloud.code.saas.hand-china.com/mobileCloud/v1/bundle/getData/3';
-let token = 'Bearer 73ab869d-7d24-4e07-b5a9-858c10bce9c4';
+var REQUEST_URL = '';
+let token = '';
 const { width, height } = Dimensions.get('window');
 export default class SecondPage extends Component {
 
@@ -85,30 +85,30 @@ export default class SecondPage extends Component {
         //                 });
         //             });
         //     });
-        // var nativeManager = NativeModules.NativeManager;
-        // try {
-        //     const back = await nativeManager.getConfigData();
-        //     REQUEST_URL = back[0] + "/getData/3";
-        //     token = back[1];
-        //     iconPath = back[2] + '/icon';
-        //     this._fetch(REQUEST_URL, 10000)
-        //             .then((info) => {
-        //                 console.log("yes");
-        //              this.loadRemoteData();
-        //                 this.setState({
-        //                     isRefreshing: false
-        //                 });
-        //             }).catch((err) => {
-        //                 console.log("error");
+        var nativeManager = NativeModules.NativeManager;
+        try {
+            const back = await nativeManager.getConfigData();
+            REQUEST_URL = back[0] + "/getData/3";
+            token = back[1];
+            iconPath = back[2] + '/icon';
+            this._fetch(REQUEST_URL, 10000)
+                    .then((info) => {
+                        console.log("yes");
+                     this.loadRemoteData();
+                        this.setState({
+                            isRefreshing: false
+                        });
+                    }).catch((err) => {
+                        console.log("error");
                         this.loadLoaclData();
-                        // throw new Error(err);
-        //                 this.setState({
-        //                     isRefreshing: false
-        //                 });
-        //             });
-        // } catch (e) {
-        //     console.error(e);
-        // }
+                        throw new Error(err);
+                        this.setState({
+                            isRefreshing: false
+                        });
+                    });
+        } catch (e) {
+            console.error(e);
+        }
     }
 
     // 超时版的fetch
@@ -159,11 +159,13 @@ export default class SecondPage extends Component {
      * @memberof ThirdPage
      */
     loadRemoteData() {
-        // NativeModules.NativeManager.downloadIcon((back) => {
-        //     if (back != null) {
-        //         iconPath = back;
-        //     }
-        // });
+        console.log("downloadIcon")
+        NativeModules.NativeManager.downloadIcon((back) => {
+            // console.log(back);
+            if (back != null && back != "") {
+                iconPath = back;
+            }
+        });
         this.fetchData();
         this.timer = setTimeout(() => {
             this.mainUpdate();
@@ -176,7 +178,7 @@ export default class SecondPage extends Component {
         console.log("i am in ")
         fetch(REQUEST_URL, {
             headers: {
-                "Authorization": "Bearer 73ab869d-7d24-4e07-b5a9-858c10bce9c4"
+                "Authorization":token
             }
         })
             .then((response) => response.json())
@@ -312,9 +314,9 @@ export default class SecondPage extends Component {
     show(name, id) {
         NativeModules.NativeManager.openBundle(name, (type) => {
             let title = ""
-            /*if (type == "netError") {
+            if (type == "netError") {
                 Alert.alert("网络或服务器出错，请重启软件再尝试！");
-            }else{*/
+            }else{
             if (type == "update") {
                 title = "发现新版本,是否升级?"
             } else {
@@ -327,13 +329,15 @@ export default class SecondPage extends Component {
                     {
                         text: '是',
                         onPress: () => {
-                            NativeModules.NativeManager.downloadAndOpenBundle(name, id, (type, result) => {
+                            NativeModules.NativeManager.downloadAndOpenBundle(name, id, (type) => {
+                                console.log("+++")
+                                console.log(id)
                                 if (type == "netError") {
                                     Alert.alert("网络或服务器出错，请重启软件再尝试！");
                                 } else if (type == "success") {
-                                    //ToastAndroid.show(result, ToastAndroid.SHORT);
+                                    Alert.alert("success");
                                 } else {
-                                    ToastAndroid.show(result, ToastAndroid.SHORT);
+                                    Alert.alert("failed");
                                 }
                             });
                         }
@@ -343,17 +347,19 @@ export default class SecondPage extends Component {
                     }
                 ]
             );
-            // }
+            }
         });
     }
 
     renderIcon(icon) {
-        const iconUri = 'file://' + iconPath +'/'+ icon.name + '.png';
+        // console.log(iconPath)
+        const iconUri = "file://"+iconPath +'/'+ icon.name + '.png';
+        // console.log("========="+iconUri);
         return (
             <TouchableWithoutFeedback onPress={() => this._onIconClick(icon.name, icon.id)}>
                 <View style={styles.container}>
                     <Image
-                        source={{ uri: iconUri }}
+                        source={{uri: iconUri}}
                         style={styles.thumbnail}
                     />
                     <View>

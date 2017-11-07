@@ -8,6 +8,6 @@ struct AppUpdateModel: HandyJSON {
     var updateAble:Bool?
     var url:String?
     var targetVersion:String?
-    var mainBundle:BundleUpdateModel?
-    var bundleUpdates = [String : BundleUpdateModel]()
+    var mainBundleUpdate:BundleUpdateModel?
+    var bundlesUpdate = [String : BundleUpdateModel]()
 }

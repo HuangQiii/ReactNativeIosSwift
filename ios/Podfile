@@ -9,8 +9,10 @@ target 'Mutiple View' do
     'Core',
     'DevSupport',
     'RCTText',
+    'RCTImage',
     'RCTNetwork',
     'RCTWebSocket',
+    'RCTLinkingIOS',
   ]
   pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
   pod 'SSZipArchive'

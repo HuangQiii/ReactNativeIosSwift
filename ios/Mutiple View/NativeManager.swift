@@ -34,23 +34,38 @@ class NativeManager: NSObject {
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
         bundleManager!.goTo(view: rootViewController!,name: "Hello")
     }
-    @objc func openBundle(_ name:String){
+    @objc func openBundle(_ name:String, callback:RCTResponseSenderBlock){
+        print(name)
         let rootViewController:UIViewController? = UIApplication.topViewController()
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
-        bundleManager!.goTo(view: rootViewController!,name: name)
-        print(name)
+        var appModel:AppModel? = bundleManager?.getAppModel()
+        var appUpdateModel:AppUpdateModel? = bundleManager?.getAppUpdateModel()
+        if ((appModel?.bundles[name]) != nil) {
+            if appUpdateModel == nil {
+                callback(["netError"])
+            }else if appUpdateModel?.bundlesUpdate[name] != nil{
+                callback(["update"])
+            }else{
+                bundleManager!.goTo(view: rootViewController!,name: "Second")
+            }
+        }else{
+            callback(["new"])
+        }
     }
-    @objc func downloadBundle(_ name:String){
+    @objc func downloadAndOpenBundle(_ name:String,id:Int, callback:RCTResponseSenderBlock){
+        print("---")
+        print(id)
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        bunderManager!.downloadBundle(name: name, url: "http://xxx/v1/bundle/downFile/3/1")
+        bunderManager!.downloadBundle(name: name, id:id)
+        callback(["success"])
     }
-    @objc func getToken() -> String{
+    @objc func getToken(){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        return bunderManager!.getToken()
+        bunderManager!.getToken()
     }
     @objc func setToken(_ token:String){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        return bunderManager!.setToken(token: token)
+        bunderManager!.setToken(token: token)
     }
 //    @objc func getConfigData(_ callback:RCTResponseSenderBlock){
 //        callback(["HELLO"])
@@ -65,6 +80,12 @@ class NativeManager: NSObject {
         events = [serverUrl,token,loginUrl]
         resolver(events);
         
+    }
+    
+    @objc func downloadIcon(_ callback:RCTResponseSenderBlock){
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        let iconPath = bunderManager!.downloadIcon()
+        callback([iconPath])
     }
 
 }

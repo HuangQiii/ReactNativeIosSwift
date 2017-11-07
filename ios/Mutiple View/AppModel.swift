@@ -8,5 +8,5 @@ struct AppModel: HandyJSON {
     var token:String?
     var url:String?
     var mainBundle:BundleModel?
-    var bundleModels = [String : BundleModel]()
+    var bundles = [String : BundleModel]()
 }

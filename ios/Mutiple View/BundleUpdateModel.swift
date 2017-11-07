@@ -6,4 +6,6 @@ struct BundleUpdateModel: HandyJSON {
     var name:String?
     var targetVersion:String?
     var bundleVersionId:Int?
+    var description:String?
+    var isMain:Int?
 }

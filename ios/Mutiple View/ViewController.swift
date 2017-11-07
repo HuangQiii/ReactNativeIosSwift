@@ -5,16 +5,15 @@ import SSZipArchive
 class ViewController: UIViewController {
     
     @IBOutlet weak var outlet: UITextField!
-    var name="Hello"
-    
+        
     func goToThree(_ sender: Any) {
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
         bundleManager!.goTo(view: self,name: "Hello")
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue"{
+        if segue.identifier == "ShowSecond"{
             let controller = segue.destination as! SecondViewController
-            controller.name = sender as! String
+            controller.name = sender as? String
         }
     }
     override func loadView() {

@@ -10,6 +10,11 @@ PODS:
     - React/Core
     - React/RCTWebSocket
   - React/jschelpers (0.44.3)
+  - React/RCTImage (0.44.3):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.44.3):
+    - React/Core
   - React/RCTNetwork (0.44.3):
     - React/Core
   - React/RCTText (0.44.3):
@@ -24,6 +29,8 @@ DEPENDENCIES:
   - HandyJSON
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
@@ -43,6 +50,6 @@ SPEC CHECKSUMS:
   SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
   Yoga: c90474ca3ec1edba44c97b6c381f03e222a9e287
 
-PODFILE CHECKSUM: cd655ca62d70f505886d8d4317c001a4f5f1c873
+PODFILE CHECKSUM: 2a104ea19a4d33fdea5c6a7db22c460b07c866db
 
 COCOAPODS: 1.4.0.beta.2

@@ -1,6 +1,5 @@
 import UIKit
 import React
-
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
@@ -12,6 +11,7 @@ class SecondViewController: UIViewController {
         print("-----second-----")
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
         BundleManager.secondView = self
-        bundleManager?.loadBundle(view: self,name:"second")
+        print(name)
+        bundleManager?.loadBundle(view: self,name:name!)
     }
 }
