@@ -19,8 +19,32 @@ export default class Welcome extends Component {
         }, 3000)//这里设定欢迎页时间，3s
     }
 
-    checkToken() {
-        //const token = NativeModules.NativeManager.getToken()
+    async checkToken() {
+        var nativeManager = NativeModules.NativeManager;
+        try {
+            const back = await nativeManager.getConfigData();
+            token = back[1];
+            console.log("token from swift in welcome:"+token)
+            if (token.length > 0 && token.startsWith('Bearer')) {
+                this.props.navigation.dispatch({
+                    key: 'MainScreen',
+                    type: 'ReplaceCurrentScreen',
+                    routeName: 'MainScreen',
+                    params: this.props.navigation.state.params,
+                });
+            } else {
+                this.props.navigation.dispatch({
+                    key: 'Login',
+                    type: 'ReplaceCurrentScreen',
+                    routeName: 'Login',
+                    params: this.props.navigation.state.params,
+                });
+            }
+        } catch (e) {
+            console.error(e);
+        }
+
+        // const token = NativeModules.NativeManager.getToken()
         // .then((back) => {
         //     token = back['token'];
         //     console.log(token);
@@ -34,14 +58,14 @@ export default class Welcome extends Component {
         //         params: this.props.navigation.state.params,
         //     });
         // } else {
-            this.props.navigation.dispatch({
-                key: 'Login',
-                type: 'ReplaceCurrentScreen',
-                routeName: 'MainScreen',
-                params: this.props.navigation.state.params,
-            });
+        //     this.props.navigation.dispatch({
+        //         key: 'Login',
+        //         type: 'ReplaceCurrentScreen',
+        //         routeName: 'MainScreen',
+        //         params: this.props.navigation.state.params,
+        //     });
         // }
-        // });
+        //});
     }
 
     render() {

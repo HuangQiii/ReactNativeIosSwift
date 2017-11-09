@@ -15,12 +15,14 @@ import {
     Dimensions,
     ToastAndroid,
     ScrollView,
+    ProgressViewIOS
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 let iconPath = '';//模块图标路径
 var REQUEST_URL = '';
 let token = '';
+let sign = false;
 const { width, height } = Dimensions.get('window');
 export default class SecondPage extends Component {
 
@@ -33,11 +35,19 @@ export default class SecondPage extends Component {
 
         this.state = {
             dataSource: new ListView.DataSource({
-                rowHasChanged: (row1, row2) => row1 !== row2,
+                rowHasChanged: (row1, row2) => {
+                    if(sign){
+                        return sign
+                    }else{
+                        return row1 !== row2
+                    }
+                }
             }),
             swiperShow: false,
             loaded: false,
             isRefreshing: false,
+            dataSourceProgress:{},
+            data:[]
         };
         this.fetchData = this.fetchData.bind(this);
         this.refresh = this.refresh.bind(this);
@@ -72,7 +82,7 @@ export default class SecondPage extends Component {
         //         this._fetch(REQUEST_URL, 10000)
         //             .then((info) => {
         //                 console.log("yes");
-                        this.loadRemoteData();
+        //                this.loadRemoteData();
         //                 this.setState({
         //                     isRefreshing: false
         //                 });
@@ -88,13 +98,13 @@ export default class SecondPage extends Component {
         var nativeManager = NativeModules.NativeManager;
         try {
             const back = await nativeManager.getConfigData();
-            REQUEST_URL = back[0] + "/getData/3";
+            REQUEST_URL = back[0] + "/getData/"+back[3];
             token = back[1];
             iconPath = back[2] + '/icon';
             this._fetch(REQUEST_URL, 10000)
                     .then((info) => {
                         console.log("yes");
-                     this.loadRemoteData();
+                        this.loadRemoteData();
                         this.setState({
                             isRefreshing: false
                         });
@@ -184,8 +194,10 @@ export default class SecondPage extends Component {
             .then((response) => response.json())
             .then((responseData) => {
                 if (responseData.error == undefined) {
+                    sign = true
                     this.setState({
                         dataSource: this.state.dataSource.cloneWithRows(responseData),
+                        data:responseData,
                         loaded: true,
                     });
                 } else {
@@ -263,6 +275,7 @@ export default class SecondPage extends Component {
         if (!this.state.loaded) {
             return this.renderLoadingView();
         }
+        console.log("i am in the render")
         const { navigate } = this.props.nav;
         return (
             <View style={{ backgroundColor: '#F1F1F1', height: height }}>
@@ -329,15 +342,28 @@ export default class SecondPage extends Component {
                     {
                         text: '是',
                         onPress: () => {
+                            let sign = true;
+                            var obj = {};
+                            obj[name] = 0.6;
+                            var dsp = Object.assign(this.state.dataSourceProgress,obj);
+                            this.setState({
+                                dataSource:this.state.dataSource.cloneWithRows(this.state.data),
+                                dataSourceProgress:dsp
+                            },function(){
+                                console.log("---change progress---")
+                                console.log(this.state.dataSourceProgress)
+                            });
+                            
                             NativeModules.NativeManager.downloadAndOpenBundle(name, id, (type) => {
-                                console.log("+++")
-                                console.log(id)
+                                // console.log("+++")
+                                // console.log(id)
+                                // console.log(type)
                                 if (type == "netError") {
                                     Alert.alert("网络或服务器出错，请重启软件再尝试！");
                                 } else if (type == "success") {
-                                    Alert.alert("success");
+                                    Alert.alert("下载完成！");
                                 } else {
-                                    Alert.alert("failed");
+                                    Alert.alert("下载失败！请重试");
                                 }
                             });
                         }
@@ -364,7 +390,16 @@ export default class SecondPage extends Component {
                     />
                     <View>
                         <Text style={styles.name}>{icon.name}</Text>
+                        {
+                        this.state.dataSourceProgress[icon.name]&&this.state.dataSourceProgress[icon.name]>0&&this.state.dataSourceProgress[icon.name]<1&&
+                        <ProgressViewIOS
+                            sytle={{width:40,height:10}}
+                            progressTintColor="red"
+                            progress={this.state.dataSourceProgress[icon.name]}
+                        />
+                    }
                     </View>
+                    
                 </View>
             </TouchableWithoutFeedback>
         );

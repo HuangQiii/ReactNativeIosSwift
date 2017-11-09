@@ -24,7 +24,7 @@
 		6087C7731FA80AC000711F95 /* BundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7721FA80AC000711F95 /* BundleManager.swift */; };
 		6087C7751FA81E6F00711F95 /* BundleUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7741FA81E6F00711F95 /* BundleUpdateModel.swift */; };
 		6087C7771FA81ED700711F95 /* AppUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6087C7761FA81ED700711F95 /* AppUpdateModel.swift */; };
-		608B484E1FB1D059005969BF /* index.ios.zip in Resources */ = {isa = PBXBuildFile; fileRef = 608B484D1FB1D059005969BF /* index.ios.zip */; };
+		608B48B21FB435E0005969BF /* index.ios.zip in Resources */ = {isa = PBXBuildFile; fileRef = 608B48B11FB435E0005969BF /* index.ios.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		6087C7721FA80AC000711F95 /* BundleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleManager.swift; sourceTree = "<group>"; };
 		6087C7741FA81E6F00711F95 /* BundleUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleUpdateModel.swift; sourceTree = "<group>"; };
 		6087C7761FA81ED700711F95 /* AppUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateModel.swift; sourceTree = "<group>"; };
-		608B484D1FB1D059005969BF /* index.ios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = index.ios.zip; path = bundle/index.ios.zip; sourceTree = SOURCE_ROOT; };
+		608B48B11FB435E0005969BF /* index.ios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = index.ios.zip; path = bundle/index.ios.zip; sourceTree = SOURCE_ROOT; };
 		8E48330811D9C7E8E6C8B91D /* Pods_Mutiple_View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mutiple_View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7122A2972A3976B3B7A368A /* Pods-Mutiple View.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mutiple View.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mutiple View/Pods-Mutiple View.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +88,7 @@
 			children = (
 				6087C75D1FA6D07E00711F95 /* Model */,
 				606F3DC81FAADF620089EB1C /* second.ios.zip */,
-				608B484D1FB1D059005969BF /* index.ios.zip */,
+				608B48B11FB435E0005969BF /* index.ios.zip */,
 				6087C7721FA80AC000711F95 /* BundleManager.swift */,
 				607139431EFE7CEC008B695E /* AppDelegate.swift */,
 				607139451EFE7CEC008B695E /* ViewController.swift */,
@@ -198,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6071394E1EFE7CEC008B695E /* LaunchScreen.storyboard in Resources */,
-				608B484E1FB1D059005969BF /* index.ios.zip in Resources */,
+				608B48B21FB435E0005969BF /* index.ios.zip in Resources */,
 				6071394B1EFE7CEC008B695E /* Assets.xcassets in Resources */,
 				607139491EFE7CEC008B695E /* Main.storyboard in Resources */,
 				6087C7641FA70A0200711F95 /* bundleModel.json in Resources */,

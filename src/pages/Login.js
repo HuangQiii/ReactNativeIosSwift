@@ -67,7 +67,7 @@ export default class Login extends Component {
                             params: this.props.navigation.state.params,
                         });
                         console.log(e.nativeEvent.data);
-                        //NativeModules.NativeManager.setToken(e.nativeEvent.data);
+                        NativeModules.NativeManager.setToken(e.nativeEvent.data);
                         //CookieManager.clearAll();
                     }}
                 />

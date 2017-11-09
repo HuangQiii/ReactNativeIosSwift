@@ -2,7 +2,7 @@
     "id": "3",
     "name": "HANDRDC",
     "currentVersion": "1.0.0",
-    "token": "Bearer fad5d17d-6146-4b67-8a11-60b29a45a81b",
+    "token": "",
     "url": "http://gateway.mobile-cloud.code.saas.hand-china.com/mobileCloud/v1/bundle",
     "mainBundle": {
         "id": "3",

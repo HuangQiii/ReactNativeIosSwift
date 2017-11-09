@@ -45,12 +45,12 @@ export default MobileCloud = StackNavigator(
                 header: <View></View>,
             }),
         },
-        // Login: {
-        //     screen: Login,
-        //     navigationOptions: ({ navigation }) => ({
-        //         header: <View></View>,
-        //     }),
-        // },
+        Login: {
+            screen: Login,
+            navigationOptions: ({ navigation }) => ({
+                header: <View></View>,
+            }),
+        },
         // StackNavigatorFour: {
         //     screen: StackNavigatorFour,
         // },

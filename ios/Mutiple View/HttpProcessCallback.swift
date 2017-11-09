@@ -7,9 +7,33 @@
 //
 
 import Foundation
+import React
 
-protocol HttpProcessCallback {
-    func progress(progress:Float)
-    func success(object:NSObject)
-    func failure(object:NSObject)
+protocol CallbackDelegate {
+    func progress(progress:Float, callback:RCTResponseSenderBlock)
+    func success(object:NSObject, callback:RCTResponseSenderBlock)
+    func failure(object:NSObject, callback:RCTResponseSenderBlock)
+}
+
+typealias test = () -> ()
+
+class HttpProcessCallback:NSObject{
+//    var callbackDelegate:CallbackDelegate?
+    typealias CallbackSuccess = (_ object:NSObject) -> ()
+    typealias CallbackProgress = (_ progress:Float) -> ()
+    typealias CallbackFailure = (_ object:NSObject) -> ()
+
+    
+    func progrss(progess:Float, callbackProgess:CallbackProgress){
+        callbackProgess(progess)
+    }
+    
+    func success(object:NSObject, callbackSuccess:CallbackSuccess){
+        callbackSuccess(object)
+    }
+    
+    func failure(object:NSObject, callbackFailure:CallbackFailure){
+        callbackFailure(object)
+    }
+
 }

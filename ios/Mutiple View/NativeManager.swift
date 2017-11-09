@@ -29,6 +29,7 @@ extension UIApplication {
 
 @objc(NativeManager)
 class NativeManager: NSObject {
+    
     @objc func testCall(){
         let rootViewController:UIViewController? = UIApplication.topViewController()
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
@@ -52,24 +53,23 @@ class NativeManager: NSObject {
             callback(["new"])
         }
     }
-    @objc func downloadAndOpenBundle(_ name:String,id:Int, callback:RCTResponseSenderBlock){
+    @objc func downloadAndOpenBundle(_ name:String,id:Int, callback:@escaping RCTResponseSenderBlock){
         print("---")
         print(id)
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        bunderManager!.downloadBundle(name: name, id:id)
-        callback(["success"])
+
+        bunderManager!.downloadBundle(name: name, id:id, callback: callback)
+//        callback(["success"])
     }
-    @objc func getToken(){
-        let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        bunderManager!.getToken()
-    }
+//    @objc func getToken(){
+//        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+//        bunderManager!.getToken()
+//    }
     @objc func setToken(_ token:String){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
         bunderManager!.setToken(token: token)
     }
-//    @objc func getConfigData(_ callback:RCTResponseSenderBlock){
-//        callback(["HELLO"])
-//    }
+    
     @objc func getConfigData(_ resolver:RCTPromiseResolveBlock, rejecter:RCTPromiseRejectBlock){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
         let appModel:AppModel = (bunderManager?.getAppModel())!
@@ -77,7 +77,8 @@ class NativeManager: NSObject {
         let token:String = appModel.token!
         let serverUrl:String = appModel.url!
         let loginUrl:String = serverUrl.replacingOccurrences(of: "/mobileCloud/v1/bundle", with: "").replacingOccurrences(of: "gateway.", with: "")
-        events = [serverUrl,token,loginUrl]
+        let appVetsionId:Int = appModel.id!
+        events = [serverUrl,token,loginUrl,appVetsionId]
         resolver(events);
         
     }

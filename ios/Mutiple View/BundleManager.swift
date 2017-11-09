@@ -4,11 +4,11 @@ import SSZipArchive
 import HandyJSON
 import Alamofire
 
+
 class BundleManager{
     
     static var bundleManager:BundleManager? = nil
     var bundleVersion:String? = nil
-    var token:String? = "Bearer fad5d17d-6146-4b67-8a11-60b29a45a81b"
     
     static func getBundleManager() -> BundleManager {
         if BundleManager.bundleManager == nil {
@@ -22,18 +22,17 @@ class BundleManager{
 
     
     func test(){
-        let str = "{\"mainBundleUpdate\":{\"bundleVersionId\":6,\"description\":null,\"isMain\":\"0\",\"name\":\"Appmain\",\"targetVersion\":\"1.1.1\",\"bundleId\":2},\"bundlesUpdate\":{\"Appmain\":{\"bundleVersionId\":6,\"description\":null,\"isMain\":\"0\",\"name\":\"Appmain\",\"targetVersion\":\"1.1.1\",\"bundleId\":2}}}"
-//        print("=========================")
-//        print(str)
-        let appUpdateModel:AppUpdateModel? = AppUpdateModel.deserialize(from: str)
-        print(appUpdateModel)
+        
     }
     
     func goTo(view:UIViewController,name:String){
         if type(of:view) == ViewController.classForCoder() {
         //BundleManager.viewController?.dismiss(animated: true, completion: nil)
         //view.navigationController?.popViewController(animated: true)
-            view.performSegue(withIdentifier: "ShowSecond", sender: name)
+            //主线程运行
+            DispatchQueue.main.async {
+                view.performSegue(withIdentifier: "ShowSecond", sender: name)
+            }
         }else{
             view.performSegue(withIdentifier: "show2", sender: name)
         }
@@ -41,42 +40,60 @@ class BundleManager{
     }
     
     //下载bundle
-    func downloadBundle(name:String, id:Int){
+    func downloadBundle(name:String, id:Int, callback:@escaping RCTResponseSenderBlock){
+        
         let appModel:AppModel = getAppModel()!
         let destination: DownloadRequest.DownloadFileDestination = { _, response in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent(name+"/"+name+".ios.zip")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-        let headers:HTTPHeaders=["Authorization":self.token!]
+        let token:String? = getAppModel()?.token
+
+        let headers:HTTPHeaders=["Authorization":token!]
         let url = appModel.url!+"/downFile/"+String(describing: appModel.id!)+"/"+String(describing: id)
+        var size:String?
+        
         //print(url)
         Alamofire.download(url,headers:headers,to: destination)
             .response { response in
-                print("----------------")
+//                print("----------------")
 //                print(response)
-                print(response.response?.allHeaderFields["Content-Disposition"])
-                let str:String = String(describing: (response.response?.allHeaderFields["Content-Disposition"])!)
-                let range1 = str.range(of: "-")
-                let range2 = str.range(of: ".zip")
-                let version = str.substring(with: (range1?.upperBound)!..<(range2?.lowerBound)!)
-                self.bundleVersion = version
-                print(version)
+//                print((response.response?.statusCode)!)
+                if((response.response?.statusCode)! == 200){
+                    print(response.response?.allHeaderFields["Content-Disposition"])
+                    let str:String = String(describing: (response.response?.allHeaderFields["Content-Disposition"])!)
+                    let range1 = str.range(of: "-")
+                    let range2 = str.range(of: ".zip")
+                    let version = str.substring(with: (range1?.upperBound)!..<(range2?.lowerBound)!)
+                    self.bundleVersion = version
+                    print(version)
+                    size = String(describing: response.response?.allHeaderFields["Content-Size"])
+                }else{
+                    callback(["failed"])
+                }
             }
             .downloadProgress { progress in
                 print("当前进度: \(progress.fractionCompleted)")
+                print("已下载：\(progress.completedUnitCount/1024)KB")
+                print("总大小:\(progress.totalUnitCount/1024)KB")
             }
             .responseData { response in
-                if let data = response.result.value {
-                    print("下载完毕!")
-                    let homeDirectory:String = NSHomeDirectory()+"/Documents"
-                    let mydir:String = homeDirectory+"/"+name
-                    
-                    let filePath:String = mydir + "/"+name+".ios.zip"
-                    //print(filePath)
-//                    print(mydir)
-                    SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
-                    self.updateBundleSuccess(bundleId: id, name: name, version: self.bundleVersion!, bundleFile: "")
+                if((response.response?.statusCode)! == 200){
+                    if let data = response.result.value {
+                        let homeDirectory:String = NSHomeDirectory()+"/Documents"
+                        let mydir:String = homeDirectory+"/"+name
+                        
+                        let filePath:String = mydir + "/"+name+".ios.zip"
+                        //print(filePath)
+                        //                    print(mydir)
+                        SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
+                        self.updateBundleSuccess(bundleId: id, name: name, version: self.bundleVersion!, bundleFile: "")
+                        print("bundle下载解压完毕!")
+                        callback(["success"])
+                    }
+                }else{
+                    callback(["failed"])
                 }
             }
     }
@@ -131,7 +148,9 @@ class BundleManager{
             let fileURL = documentsURL.appendingPathComponent("icon/icon.zip")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-        let headers:HTTPHeaders=["Authorization":self.token!]
+        let token:String? = getAppModel()?.token
+
+        let headers:HTTPHeaders=["Authorization":token!]
         let url:String? = appModel.url!+"/getBundleFileList/"+String(describing: appModel.id!)
         let homeDirectory:String = NSHomeDirectory()+"/Documents"
         let mydir:String = homeDirectory+"/icon"
@@ -143,7 +162,7 @@ class BundleManager{
             }
             .responseData { response in
                 if let data = response.result.value {
-                    print("下载完毕!")
+                    print("图标下载完毕!")
                     //解压到当前目录下
                     
                     SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
@@ -208,11 +227,12 @@ class BundleManager{
     func copyBundleJson(){
         let fileManager = FileManager.default
         let mydir:String = NSHomeDirectory()+"/Documents"
-//        print(NSHomeDirectory())
+        //print(NSHomeDirectory())
         let filePathOfBundle:String = mydir+"/bundleModel.json"
         let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
         let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundleModel", ofType: "json")
-        if !existOfBundlePlist{
+        
+        if (!existOfBundlePlist && jsCodeStrOfBundlePlist != nil){
             do {
                 try fileManager.copyItem(atPath: jsCodeStrOfBundlePlist!,toPath: filePathOfBundle)
             }catch let error as NSError {
@@ -224,10 +244,11 @@ class BundleManager{
     func checkBundleConfigUpdate(){
         let bundleConfig=getAppModel()?.toJSON()
         let appModel:AppModel? = getAppModel()
-        
+        let token:String? = getAppModel()?.token
+
         let headers:HTTPHeaders = [
             "Content-Type":"application/json",
-            "Authorization":self.token!
+            "Authorization":token!
         ]
         
         Alamofire.request((appModel?.url)!+"/checkBundle", method: HTTPMethod.post, parameters: bundleConfig, encoding: JSONEncoding.default, headers:headers)
@@ -252,7 +273,7 @@ class BundleManager{
         let exist = fileManager.fileExists(atPath: filePath)//判断是否存在
         let jsCodeStr = Bundle.main.path(forResource: name+".ios", ofType: "zip")
         
-        if !exist{//不存在复制并解压
+        if (!exist && jsCodeStr != nil){//不存在复制并解压
             do {
                 try fileManager.copyItem(atPath: jsCodeStr!,toPath: filePath)//copy
                 SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
@@ -292,10 +313,7 @@ class BundleManager{
         let ur = URL(fileURLWithPath: filePathOfBundle!)
         do {
             let str = try String(contentsOf: ur,encoding: .utf8)
-//            print("++++++++++")
-//            print(str)
             let appModel:AppModel = AppModel.deserialize(from:str)!
-//            print(appModel)
             return appModel
         } catch let error as NSError {
             print("Something went wrong: \(error)")
@@ -348,15 +366,15 @@ class BundleManager{
             }
         }
     }
-    //获取token
-    func getToken() -> String {
-        let appModel = getAppModel()
-        return (appModel?.token)!
-    }
+//    //获取token
+//    func getToken() -> String {
+//        let appModel = getAppModel()
+//        return (appModel?.token)!
+//    }
     //写入token
     func setToken(token:String){
         var appModel = getAppModel()
-        appModel?.token=token
+        appModel?.token="Bearer "+token
         writeAppModel(appModel: appModel!)
     }
 }
