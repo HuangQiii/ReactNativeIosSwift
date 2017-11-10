@@ -13,8 +13,8 @@ import TabNavigator from 'react-native-tab-navigator';
 import { StackNavigator } from 'react-navigation';
 
 import Header from './Header';
-//import FirstPage from '../pages/FirstPage';
-import FirstPage from './Header';
+import FirstPage from '../pages/FirstPage';
+//import FirstPage from './Header';
 import SecondPage from '../pages/SecondPage';
 import ThirdPage from '../pages/ThirdPage';
 

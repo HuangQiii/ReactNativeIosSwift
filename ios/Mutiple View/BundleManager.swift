@@ -223,6 +223,7 @@ class BundleManager{
         }
         checkBundleConfigUpdate()
     }
+    
     //复制配置表
     func copyBundleJson(){
         let fileManager = FileManager.default
@@ -374,7 +375,11 @@ class BundleManager{
     //写入token
     func setToken(token:String){
         var appModel = getAppModel()
-        appModel?.token="Bearer "+token
+        if(token == ""){
+            appModel?.token=token
+        }else{
+            appModel?.token="Bearer "+token
+        }
         writeAppModel(appModel: appModel!)
     }
 }
