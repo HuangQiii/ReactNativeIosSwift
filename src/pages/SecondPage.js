@@ -175,8 +175,8 @@ export default class SecondPage extends Component {
             if (back != null && back != "") {
                 iconPath = back;
             }
+            this.fetchData();
         });
-        this.fetchData();
         this.timer = setTimeout(() => {
             this.mainUpdate();
         },

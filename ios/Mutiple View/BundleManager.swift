@@ -140,7 +140,7 @@ class BundleManager{
         }
     }
     //下载icon
-    func downloadIcon() -> String{
+    func downloadIcon(callback: @escaping RCTResponseSenderBlock){
         let appModel:AppModel = self.getAppModel()!
         var iconPath:String? = nil
         let destination: DownloadRequest.DownloadFileDestination = { _, response in
@@ -166,9 +166,9 @@ class BundleManager{
                     //解压到当前目录下
                     
                     SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
+                    callback([iconPath])
                 }
         }
-        return iconPath!
     }
     //secondviewcontroller打开bundle
     func loadBundle(view: SecondViewController,name:String){

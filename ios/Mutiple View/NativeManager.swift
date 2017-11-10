@@ -83,10 +83,9 @@ class NativeManager: NSObject {
         
     }
     
-    @objc func downloadIcon(_ callback:RCTResponseSenderBlock){
+    @objc func downloadIcon(_ callback:@escaping RCTResponseSenderBlock){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-        let iconPath = bunderManager!.downloadIcon()
-        callback([iconPath])
+        bunderManager!.downloadIcon(callback:callback)
     }
 
 }
