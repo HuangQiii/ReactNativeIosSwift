@@ -13,12 +13,12 @@
 		38132E7C57E5486B851D4ED6 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6CFEF1E8A0146C3A28CDA0C /* SimpleLineIcons.ttf */; };
 		4A49C92382044E4C8662F4C3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0476CC24EACE4CF28498C6E1 /* MaterialIcons.ttf */; };
 		53EEC66A33E6430D965D8F65 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3882C8AEBFB4E5FB3B836B7 /* Foundation.ttf */; };
+		6012A73E1FBDAEF700F36190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6012A73D1FBDAEF700F36190 /* Main.storyboard */; };
 		606F3DBE1FA897FE0089EB1C /* NativeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F3DBD1FA897FE0089EB1C /* NativeManager.swift */; };
 		606F3DC11FA899790089EB1C /* NativeManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F3DC01FA899790089EB1C /* NativeManagerBridge.m */; };
 		606F3DC91FAADF620089EB1C /* second.ios.zip in Resources */ = {isa = PBXBuildFile; fileRef = 606F3DC81FAADF620089EB1C /* second.ios.zip */; };
 		607139441EFE7CEC008B695E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139431EFE7CEC008B695E /* AppDelegate.swift */; };
 		607139461EFE7CEC008B695E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139451EFE7CEC008B695E /* ViewController.swift */; };
-		607139491EFE7CEC008B695E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607139471EFE7CEC008B695E /* Main.storyboard */; };
 		6071394B1EFE7CEC008B695E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6071394A1EFE7CEC008B695E /* Assets.xcassets */; };
 		6071394E1EFE7CEC008B695E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071394C1EFE7CEC008B695E /* LaunchScreen.storyboard */; };
 		607139561EFE8664008B695E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607139551EFE8664008B695E /* SecondViewController.swift */; };
@@ -44,6 +44,7 @@
 		2E6F5B1D3B2448F0A4D169EC /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
 		308A3B690E4B4A228D065118 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		58EC79C8A28A44F42559CB81 /* Pods-Mutiple View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mutiple View.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mutiple View/Pods-Mutiple View.release.xcconfig"; sourceTree = "<group>"; };
+		6012A73D1FBDAEF700F36190 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../MobileCloudIOS44test/ios/MobileCloudIOS44/Main.storyboard; sourceTree = "<group>"; };
 		606F3DBD1FA897FE0089EB1C /* NativeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeManager.swift; sourceTree = "<group>"; };
 		606F3DBF1FA899780089EB1C /* Mutiple View-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mutiple View-Bridging-Header.h"; sourceTree = "<group>"; };
 		606F3DC01FA899790089EB1C /* NativeManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeManagerBridge.m; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		607139401EFE7CEC008B695E /* Mutiple View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mutiple View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607139431EFE7CEC008B695E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607139451EFE7CEC008B695E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607139481EFE7CEC008B695E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6071394A1EFE7CEC008B695E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6071394D1EFE7CEC008B695E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6071394F1EFE7CEC008B695E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				6087C75D1FA6D07E00711F95 /* Model */,
 				607139431EFE7CEC008B695E /* AppDelegate.swift */,
 				607139451EFE7CEC008B695E /* ViewController.swift */,
-				607139471EFE7CEC008B695E /* Main.storyboard */,
+				6012A73D1FBDAEF700F36190 /* Main.storyboard */,
 				607139551EFE8664008B695E /* SecondViewController.swift */,
 				6071394A1EFE7CEC008B695E /* Assets.xcassets */,
 				6071394C1EFE7CEC008B695E /* LaunchScreen.storyboard */,
@@ -267,7 +267,6 @@
 			files = (
 				6071394E1EFE7CEC008B695E /* LaunchScreen.storyboard in Resources */,
 				6071394B1EFE7CEC008B695E /* Assets.xcassets in Resources */,
-				607139491EFE7CEC008B695E /* Main.storyboard in Resources */,
 				6087C7641FA70A0200711F95 /* bundleModel.json in Resources */,
 				606F3DC91FAADF620089EB1C /* second.ios.zip in Resources */,
 				96CD25A1BD7A49E292D3A9EE /* Entypo.ttf in Resources */,
@@ -282,6 +281,7 @@
 				AD896912A8D04E4D8ACEEBA2 /* Roboto.ttf in Resources */,
 				E47001C15E964F33BC6C1139 /* rubicon-icon-font.ttf in Resources */,
 				38132E7C57E5486B851D4ED6 /* SimpleLineIcons.ttf in Resources */,
+				6012A73E1FBDAEF700F36190 /* Main.storyboard in Resources */,
 				32049FEBD37C45E789C6A872 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,14 +372,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		607139471EFE7CEC008B695E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607139481EFE7CEC008B695E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6071394C1EFE7CEC008B695E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

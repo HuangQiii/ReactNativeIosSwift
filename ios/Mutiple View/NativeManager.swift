@@ -33,7 +33,7 @@ class NativeManager: NSObject {
     @objc func testCall(){
         let rootViewController:UIViewController? = UIApplication.topViewController()
         let bundleManager:BundleManager? = BundleManager.getBundleManager()
-        bundleManager!.goTo(view: rootViewController!,name: "Hello")
+        bundleManager!.goTo(view: rootViewController!, name: "hello")
     }
     @objc func openBundle(_ name:String, callback:RCTResponseSenderBlock){
         print(name)
@@ -47,7 +47,9 @@ class NativeManager: NSObject {
             }else if appUpdateModel?.bundlesUpdate[name] != nil{
                 callback(["update"])
             }else{
-                bundleManager!.goTo(view: rootViewController!,name: "Second")
+                bundleManager!.goTo(view: rootViewController!,name: name)
+                
+                
             }
         }else{
             callback(["new"])
@@ -57,14 +59,14 @@ class NativeManager: NSObject {
         print("---")
         print(id)
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
-
+        
         bunderManager!.downloadBundle(name: name, id:id, callback: callback)
-//        callback(["success"])
+        //        callback(["success"])
     }
-//    @objc func getToken(){
-//        let bunderManager:BundleManager? = BundleManager.getBundleManager()
-//        bunderManager!.getToken()
-//    }
+    //    @objc func getToken(){
+    //        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+    //        bunderManager!.getToken()
+    //    }
     @objc func setToken(_ token:String){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
         bunderManager!.setToken(token: token)
@@ -83,10 +85,25 @@ class NativeManager: NSObject {
         
     }
     
+    //下载图标
     @objc func downloadIcon(_ callback:@escaping RCTResponseSenderBlock){
         let bunderManager:BundleManager? = BundleManager.getBundleManager()
         bunderManager!.downloadIcon(callback:callback)
     }
-
+    
+    //加载本地模块
+    @objc func getLocalData(_ callback:RCTResponseSenderBlock){
+        let bunderManager:BundleManager? = BundleManager.getBundleManager()
+        let appModel:AppModel = (bunderManager?.getAppModel())!
+        var bundles:String = ""
+        for bundleModel:BundleModel in appModel.bundles.values {
+            let bundle = "{id:"+String(bundleModel.id!)+",name:"+bundleModel.name!
+            bundles = bundles+bundle
+        }
+        
+        print(bundles)
+        callback([bundles])
+    }
+    
 }
 

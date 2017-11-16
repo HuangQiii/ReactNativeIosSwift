@@ -9,6 +9,7 @@ class BundleManager{
     
     static var bundleManager:BundleManager? = nil
     var bundleVersion:String? = nil
+    static var mainView:UIView? = nil
     
     static func getBundleManager() -> BundleManager {
         if BundleManager.bundleManager == nil {
@@ -19,24 +20,26 @@ class BundleManager{
     
     static var secondView:SecondViewController? = nil
     static var viewController:ViewController? = nil
-
     
     func test(){
-        
     }
     
     func goTo(view:UIViewController,name:String){
         if type(of:view) == ViewController.classForCoder() {
-        //BundleManager.viewController?.dismiss(animated: true, completion: nil)
-        //view.navigationController?.popViewController(animated: true)
+            //BundleManager.viewController?.dismiss(animated: true, completion: nil)
+            //view.navigationController?.popViewController(animated: true)
             //主线程运行
             DispatchQueue.main.async {
                 view.performSegue(withIdentifier: "ShowSecond", sender: name)
             }
         }else{
-            view.performSegue(withIdentifier: "show2", sender: name)
+            //            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0*NSEC_PER_SEC))/Double(NSEC_PER_SEC)) {
+            //                BundleManager.secondView?.navigationController?.popViewController(animated: true)
+            //            }
+            DispatchQueue.main.async {
+                BundleManager.secondView?.navigationController?.popViewController(animated: true)
+            }
         }
-    
     }
     
     //下载bundle
@@ -49,7 +52,7 @@ class BundleManager{
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         let token:String? = getAppModel()?.token
-
+        
         let headers:HTTPHeaders=["Authorization":token!]
         let url = appModel.url!+"/downFile/"+String(describing: appModel.id!)+"/"+String(describing: id)
         var size:String?
@@ -57,9 +60,9 @@ class BundleManager{
         //print(url)
         Alamofire.download(url,headers:headers,to: destination)
             .response { response in
-//                print("----------------")
-//                print(response)
-//                print((response.response?.statusCode)!)
+                //                print("----------------")
+                //                print(response)
+                //                print((response.response?.statusCode)!)
                 if((response.response?.statusCode)! == 200){
                     print(response.response?.allHeaderFields["Content-Disposition"])
                     let str:String = String(describing: (response.response?.allHeaderFields["Content-Disposition"])!)
@@ -95,7 +98,7 @@ class BundleManager{
                 }else{
                     callback(["failed"])
                 }
-            }
+        }
     }
     //下载成功更新bundle.json和bundleupdate.json
     func updateBundleSuccess(bundleId:Int, name:String, version:String, bundleFile:String){
@@ -149,7 +152,7 @@ class BundleManager{
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         let token:String? = getAppModel()?.token
-
+        
         let headers:HTTPHeaders=["Authorization":token!]
         let url:String? = appModel.url!+"/getBundleFileList/"+String(describing: appModel.id!)
         let homeDirectory:String = NSHomeDirectory()+"/Documents"
@@ -161,11 +164,12 @@ class BundleManager{
                 print("当前进度: \(progress.fractionCompleted)")
             }
             .responseData { response in
-                if let data = response.result.value {
+                if (response.response?.statusCode == 200) {
                     print("图标下载完毕!")
                     //解压到当前目录下
-                    
                     SSZipArchive.unzipFile(atPath: filePath, toDestination: mydir)//unzip
+                    callback([iconPath])
+                }else{
                     callback([iconPath])
                 }
         }
@@ -190,25 +194,28 @@ class BundleManager{
         )
         let vc = BundleManager.secondView
         vc?.view = rootView
-        //view.present(vc, animated: true, completion: nil)
-        view.navigationController?.pushViewController(vc!, animated: true)
+        //        BundleManager.viewController?.present(vc!, animated: true, completion: nil)
+        //        view.navigationController?.pushViewController(vc!, animated: true)
     }
+    
+    
     func loadMainBundle(view: ViewController,name:String){
         let mydir:String = NSHomeDirectory()+"/Documents"
         let filePath:String = mydir + "/index/"+name+".ios.jsbundle"
         let jsCodeUrl:URL?=URL(fileURLWithPath: filePath)
+        
+        let vc = BundleManager.viewController
         let rootView = RCTRootView(
             bundleURL: jsCodeUrl,
             moduleName: "Mutiple-View",
             initialProperties: nil,
             launchOptions: nil
         )
-        let vc = BundleManager.viewController
         vc?.view = rootView
         //view.present(vc, animated: true, completion: nil)
-        view.navigationController?.pushViewController(vc!, animated: true)
+        //        view.navigationController?.pushViewController(vc!, animated: true)
     }
-
+    
     //------------------------modify
     //初始化复制json和index，并根据json的bundle去复制压缩包
     func syncBundleConfig(){
@@ -228,7 +235,7 @@ class BundleManager{
     func copyBundleJson(){
         let fileManager = FileManager.default
         let mydir:String = NSHomeDirectory()+"/Documents"
-        //print(NSHomeDirectory())
+        print(NSHomeDirectory())
         let filePathOfBundle:String = mydir+"/bundleModel.json"
         let existOfBundlePlist = fileManager.fileExists(atPath: filePathOfBundle)
         let jsCodeStrOfBundlePlist = Bundle.main.path(forResource: "bundleModel", ofType: "json")
@@ -246,7 +253,7 @@ class BundleManager{
         let bundleConfig=getAppModel()?.toJSON()
         let appModel:AppModel? = getAppModel()
         let token:String? = getAppModel()?.token
-
+        
         let headers:HTTPHeaders = [
             "Content-Type":"application/json",
             "Authorization":token!
@@ -256,10 +263,12 @@ class BundleManager{
             .responseJSON{
                 response in
                 let json = response.result.value
-                let data : Data! = try? JSONSerialization.data(withJSONObject: json!, options: [])
-                let str = String(data:data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
-                let appUpdateModel:AppUpdateModel? = AppUpdateModel.deserialize(from: str)
-                self.writeAppUpdateModel(appUpdateModel: appUpdateModel!)
+                if( response.response?.statusCode == 200 && json != nil){
+                    let data : Data! = try? JSONSerialization.data(withJSONObject: json!, options: [])
+                    let str = String(data:data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                    let appUpdateModel:AppUpdateModel? = AppUpdateModel.deserialize(from: str)
+                    self.writeAppUpdateModel(appUpdateModel: appUpdateModel!)
+                }
         }
     }
     //复制bundle的压缩包
@@ -367,11 +376,11 @@ class BundleManager{
             }
         }
     }
-//    //获取token
-//    func getToken() -> String {
-//        let appModel = getAppModel()
-//        return (appModel?.token)!
-//    }
+    //    //获取token
+    //    func getToken() -> String {
+    //        let appModel = getAppModel()
+    //        return (appModel?.token)!
+    //    }
     //写入token
     func setToken(token:String){
         var appModel = getAppModel()

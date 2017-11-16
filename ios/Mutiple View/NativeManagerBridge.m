@@ -10,4 +10,5 @@ RCT_EXTERN_METHOD(setToken:(NSString *)token)
 //RCT_EXTERN_METHOD(getConfigData:(RCTResponseSenderBlock)callback)
 RCT_EXTERN_METHOD(getConfigData:(RCTPromiseResolveBlock)resolver rejecter:(RCTPromiseRejectBlock)rejecter)
 RCT_EXTERN_METHOD(downloadIcon:(RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(getLocalData:(RCTResponseSenderBlock)callback)
 @end

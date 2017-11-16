@@ -1,15 +1,15 @@
 import UIKit
-import React
-class SecondViewController: UIViewController {
 
+class SecondViewController: UIViewController {
+    
     @IBOutlet weak var label: UILabel!
     var name:String?
+    let bundleManager:BundleManager? = BundleManager.getBundleManager()
     
-    override func viewDidAppear(_ animated: Bool)
-    {
+    override func loadView() {
+        super.loadView()
         //label.text = name
         print("-----second-----")
-        let bundleManager:BundleManager? = BundleManager.getBundleManager()
         BundleManager.secondView = self
         print(name)
         bundleManager?.loadBundle(view: self,name:name!)
