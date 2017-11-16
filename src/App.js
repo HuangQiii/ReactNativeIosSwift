@@ -13,7 +13,7 @@ import { StackNavigator, NavigationActions } from 'react-navigation';
 import Welcome from './pages/Welcome';
 import MainScreen from './components/MainScreen';
 import Login from './pages/Login';
-//import Head from './pages/Head';
+import Head from './pages/Head';
 //import StackNavigatorFour from './pages/demo/StackNavigatorFour';
 //import ScannerView from './pages/QRScanner/ScannerView';
 //import Open from './pages/QRScanner/Open';
@@ -33,12 +33,12 @@ export default MobileCloud = StackNavigator(
         //         header: <View></View>,
         //     }),
         // },
-        // Head: {
-        //     screen: Head,
-        //     navigationOptions: ({ navigation }) => ({
-        //         header: <View></View>,
-        //     }),
-        // },
+        Head: {
+            screen: Head,
+            navigationOptions: ({ navigation }) => ({
+                header: <View></View>,
+            }),
+        },
         MainScreen: {
             screen: MainScreen,
             navigationOptions: ({ navigation }) => ({
