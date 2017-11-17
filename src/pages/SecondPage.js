@@ -2,7 +2,7 @@
 import React, {
     Component,
 } from 'react';
-import { NativeModules } from 'react-native';
+import { NativeModules, ActivityIndicator } from 'react-native';
 import {
     Image,
     ListView,
@@ -15,7 +15,7 @@ import {
     Dimensions,
     ToastAndroid,
     ScrollView,
-    ProgressViewIOS
+    ProgressViewIOS,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 
@@ -46,7 +46,7 @@ export default class SecondPage extends Component {
             swiperShow: false,
             loaded: false,
             isRefreshing: false,
-            dataSourceProgress:{},
+            dataSourceProgress:[],
             data:[]
         };
         this.fetchData = this.fetchData.bind(this);
@@ -100,7 +100,7 @@ export default class SecondPage extends Component {
             const back = await nativeManager.getConfigData();
             REQUEST_URL = back[0] + "/getData/"+back[3];
             token = back[1];
-            iconPath = back[2] + '/icon';
+            // iconPath = back[2] + '/icon';
             this._fetch(REQUEST_URL, 10000)
                     .then((info) => {
                         console.log("yes");
@@ -142,25 +142,24 @@ export default class SecondPage extends Component {
      * @memberof ThirdPage
      */
     loadLoaclData() {
-        // NativeModules.NativeManager.getLocalData()
-        //     .then((back) => {
-        //         var bundleData = back.split('{');
-        //         var DATA = [];
-        //         for (var i = 1; i < bundleData.length; i++) {
-        //             var info = bundleData[i].split(',');
-        //             var id = info[0].split(':')[1];
-        //             var name = info[1].split(':')[1];
-        //             var data = {
-        //                 id,
-        //                 name
-        //             }
-        //             DATA.push(data);
-        //         }
-        //         this.setState({
-        //             dataSource: this.state.dataSource.cloneWithRows(DATA),
-        //             loaded: true,
-        //         });
-        //     });
+        NativeModules.NativeManager.getLocalData((back) => {
+            var bundleData = back.split('{');
+            var DATA = [];
+            for (var i = 1; i < bundleData.length; i++) {
+                var info = bundleData[i].split(',');
+                var id = info[0].split(':')[1];
+                var name = info[1].split(':')[1];
+                var data = {
+                    id,
+                    name
+                }
+                DATA.push(data);
+            }
+            this.setState({
+                dataSource: this.state.dataSource.cloneWithRows(DATA),
+                loaded: true,
+            });
+        })
     }
 
     /**
@@ -174,14 +173,14 @@ export default class SecondPage extends Component {
             // console.log(back);
             if (back != null && back != "") {
                 iconPath = back;
+                this.fetchData();
+                this.timer = setTimeout(() => {
+                    this.mainUpdate();
+                },
+                    2000
+                );              
             }
-            this.fetchData();
         });
-        this.timer = setTimeout(() => {
-            this.mainUpdate();
-        },
-            2000
-        );
     }
 
     fetchData() {
@@ -200,12 +199,24 @@ export default class SecondPage extends Component {
                         data:responseData,
                         loaded: true,
                     });
-                } else {
-                    this.setState({
-                        dataSource: this.state.dataSource.cloneWithRows([]),
-                        loaded: true,
+                } else if(responseData.error == "invalid_token") {
+                    //token失效
+                    console.log(responseData.error);
+                    // alert("token失效");
+                    this.props.nav.dispatch({
+                        key: 'Login',
+                        type: 'ReplaceCurrentScreen',
+                        routeName: 'Login',
+                        params: this.props.nav.state.params,
                     });
-                }
+                } else {
+                    console.log("error");
+                    this.loadLoaclData();
+                    // throw new Error(err);
+                    this.setState({
+                        isRefreshing: false
+                    });
+            }
                 console.log("*********");
                 console.log(responseData);
             });
@@ -343,16 +354,17 @@ export default class SecondPage extends Component {
                         text: '是',
                         onPress: () => {
                             let sign = true;
-                            var obj = {};
-                            obj[name] = 0.6;
-                            var dsp = Object.assign(this.state.dataSourceProgress,obj);
-                            this.setState({
-                                dataSource:this.state.dataSource.cloneWithRows(this.state.data),
-                                dataSourceProgress:dsp
-                            },function(){
-                                console.log("---change progress---")
-                                console.log(this.state.dataSourceProgress)
-                            });
+                            // var obj = {};
+                            // obj[name] = 0.6;
+                            // var dsp = Object.assign(this.state.dataSourceProgress,obj);
+                            // var dsp = this.state.dataSourceProgress.push(name).concat();
+                            // this.setState({
+                            //     dataSource:this.state.dataSource.cloneWithRows(this.state.data),
+                            //     dataSourceProgress:dsp
+                            // },function(){
+                            //     console.log("---change progress---")
+                            //     console.log(this.state.dataSourceProgress)
+                            // });
                             
                             NativeModules.NativeManager.downloadAndOpenBundle(name, id, (type) => {
                                 // console.log("+++")
@@ -390,14 +402,21 @@ export default class SecondPage extends Component {
                     />
                     <View>
                         <Text style={styles.name}>{icon.name}</Text>
-                        {
+                        {/* {
                         this.state.dataSourceProgress[icon.name]&&this.state.dataSourceProgress[icon.name]>0&&this.state.dataSourceProgress[icon.name]<1&&
                         <ProgressViewIOS
                             sytle={{width:40,height:10}}
                             progressTintColor="red"
                             progress={this.state.dataSourceProgress[icon.name]}
                         />
-                    }
+                        } */}
+                        {
+                            this.state.dataSourceProgress.indexOf(icon.name) >= 0 &&
+                            <ActivityIndicator
+                                size="small"
+                                animating={true}
+                            />
+                        }
                     </View>
                     
                 </View>

@@ -10,16 +10,22 @@ import {
 import { NativeModules } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-//import CookieManager from 'react-native-cookies';
+import CookieManager from 'react-native-cookies';
 
-var url = 'http://mobile-cloud.code.saas.hand-china.com';
-//  NativeModules.NativeManager.getConfigData()
-//             .then((back) => {
-//                 url = back['loginUrl'];
-//                 console.log(url);
-//             });
+var url = '';
+getData();
 const { width, height } = Dimensions.get('window');
 
+async function getData() {
+    var nativeManager = NativeModules.NativeManager;
+    try {
+        const back = await nativeManager.getConfigData();
+        url = back[2];
+        console.log("========url: "+url)
+    } catch (e) {
+        console.error(e);
+    }
+}
 export default class Login extends Component {
 
     //脚本注入
@@ -51,7 +57,7 @@ export default class Login extends Component {
                 <WebView
                     ref={(webview) => {
                     this.webview = webview
-                        console.log("==================webview")
+                        console.log("==================webview: "+url)
                     }}
                     onLoadEnd={this.injectJS}
                     style={{ width: width, height: height - 20, backgroundColor: 'gray' }}
@@ -68,7 +74,7 @@ export default class Login extends Component {
                         });
                         console.log(e.nativeEvent.data);
                         NativeModules.NativeManager.setToken(e.nativeEvent.data);
-                        //CookieManager.clearAll();
+                        CookieManager.clearAll();
                     }}
                 />
             </View>

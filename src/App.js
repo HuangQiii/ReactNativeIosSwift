@@ -14,7 +14,7 @@ import Welcome from './pages/Welcome';
 import MainScreen from './components/MainScreen';
 import Login from './pages/Login';
 import Head from './pages/Head';
-//import StackNavigatorFour from './pages/demo/StackNavigatorFour';
+import StackNavigatorFour from './pages/demo/StackNavigatorFour';
 //import ScannerView from './pages/QRScanner/ScannerView';
 //import Open from './pages/QRScanner/Open';
 //import BaiduMap from './pages/demo/BaiduMap';
@@ -51,9 +51,9 @@ export default MobileCloud = StackNavigator(
                 header: <View></View>,
             }),
         },
-        // StackNavigatorFour: {
-        //     screen: StackNavigatorFour,
-        // },
+        StackNavigatorFour: {
+            screen: StackNavigatorFour,
+        },
         // ScannerView: {
         //     screen: ScannerView,
         // },
@@ -123,4 +123,4 @@ MobileCloud.router.getStateForAction = (action, state) => {
     return prevGetStateForAction(action, state);
 };
 
-AppRegistry.registerComponent('Mutiple-View', () => MobileCloud);
+AppRegistry.registerComponent('MobileCloudIOS', () => MobileCloud);

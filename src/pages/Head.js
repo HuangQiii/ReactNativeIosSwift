@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-//var ImagePicker = NativeModules.ImageCropPicker;
+var ImagePicker = NativeModules.ImageCropPicker;
 const { height, width } = Dimensions.get('window');
 export default class Head extends Component {
 
@@ -23,38 +23,38 @@ export default class Head extends Component {
         };
     }
 
-    // pickSingle(cropit, circular = false) {
-    //     ImagePicker.openPicker({
-    //         width: 300,
-    //         height: 300,
-    //         cropping: cropit,
-    //         cropperCircleOverlay: circular,
-    //         compressImageMaxWidth: 640,
-    //         compressImageMaxHeight: 480,
-    //         compressImageQuality: 0.5,
-    //         compressVideoPreset: 'MediumQuality',
-    //     }).then(image => {
-    //         console.log('received image', image);
-    //         this.setState({
-    //             image: { uri: image.path, width: image.width, height: image.height, mime: image.mime },
-    //         });
-    //     }).catch(e => {
-    //         console.log(e);
-    //         Alert.alert(e.message ? e.message : e);
-    //     });
-    // }
-    // pickSingleWithCamera(cropping) {
-    //     ImagePicker.openCamera({
-    //         cropping: cropping,
-    //         width: 500,
-    //         height: 500,
-    //     }).then(image => {
-    //         console.log('received image', image);
-    //         this.setState({
-    //             image: { uri: image.path, width: image.width, height: image.height },
-    //         });
-    //     }).catch(e => alert(e));
-    // }
+    pickSingle(cropit, circular = false) {
+        ImagePicker.openPicker({
+            width: 300,
+            height: 300,
+            cropping: cropit,
+            cropperCircleOverlay: circular,
+            compressImageMaxWidth: 640,
+            compressImageMaxHeight: 480,
+            compressImageQuality: 0.5,
+            compressVideoPreset: 'MediumQuality',
+        }).then(image => {
+            console.log('received image', image);
+            this.setState({
+                image: { uri: image.path, width: image.width, height: image.height, mime: image.mime },
+            });
+        }).catch(e => {
+            console.log(e);
+            Alert.alert(e.message ? e.message : e);
+        });
+    }
+    pickSingleWithCamera(cropping) {
+        ImagePicker.openCamera({
+            cropping: cropping,
+            width: 500,
+            height: 500,
+        }).then(image => {
+            console.log('received image', image);
+            this.setState({
+                image: { uri: image.path, width: image.width, height: image.height },
+            });
+        }).catch(e => alert(e));
+    }
     _renderImage(image) {
         if (image != 'default') {
             return <Image style={{ width: 250, height: 250, borderRadius: 250, }} source={image} />
